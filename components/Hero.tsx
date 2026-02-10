@@ -1,6 +1,6 @@
 import React from 'react'
 import { Spotlight } from './ui/spotlight'
-import { Grid } from './ui/grid'
+import { GridBackground } from './ui/grid-background'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/magic-button'
 import { FaLocationArrow } from 'react-icons/fa'
@@ -14,7 +14,7 @@ const Hero = () => {
                 <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='blue' />
             </div>
             <div>
-                <Grid />
+                <GridBackground />
             </div>
             <div className='flex justify-center relative my-20 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
