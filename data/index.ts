@@ -195,7 +195,7 @@ export const workExperience = [
   {
     id: 4,
     title: "Misterius dan Penuh Teka-teki",
-    desc: "Pria yang sungguh misterius dan tidak mudah ditebak yang dapat memikat hati para wanita",
+    desc: "Pria yang sungguh misterius dan tidak mudah ditebak serta penuh aura dingin namun juga hangat",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
