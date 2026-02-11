@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { BackToTopButton } from "@/components/ui/back-to-top-botton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
         >
           <ThemeToggle />
           {children}
+          <BackToTopButton />
         </ThemeProvider>
       </body>
     </html>

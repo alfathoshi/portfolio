@@ -6,7 +6,7 @@ const Approach = () => {
     <div className='w-full py-20' id='approach'>
       <h1 className='heading'>
         My
-        <span className='text-purple'> Approach</span>
+        <span className='text-primary'> Approach</span>
       </h1>
       <div>
         <CanvasRevealEffectDemo />

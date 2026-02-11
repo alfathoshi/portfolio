@@ -11,13 +11,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <main className="relative bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5 overflow-clip">
+   <main className="relative bg-background dark:bg-black flex justify-center items-center flex-col  mx-auto sm:px-10 px-5 overflow-clip">
     <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems} />
      <Hero />
      <Grid />
      <RecentProjects />
-     <Clients/>
+     {/* <Clients/> */}
      <Experience/>
      <Approach />
      <Footer/>

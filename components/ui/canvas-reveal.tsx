@@ -6,6 +6,7 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { div } from "three/src/nodes/TSL.js";
 import MagicButton from "./magic-button";
 import { FaLocationArrow } from "react-icons/fa";
+import { useTheme } from "next-themes";
 
 export function CanvasRevealEffectDemo() {
   return (
@@ -14,8 +15,8 @@ export function CanvasRevealEffectDemo() {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
+          des="We'll collaborate to map out your app's goals, target audience, 
+          and key functionalities. We'll discuss things like app structure, 
           navigation, and content requirements."
         >
           <CanvasRevealEffect
@@ -47,10 +48,10 @@ export function CanvasRevealEffectDemo() {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Deployment & Launch"
           icon={<AceternityIcon order="Phase 3" />}
           des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
+          I'll translate everything into functional code, building your app
           from the ground up."
         >
           <CanvasRevealEffect
@@ -77,6 +78,8 @@ const Card = ({
   des: string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
+  const { theme, setTheme } = useTheme();
+
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -87,9 +90,8 @@ const Card = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        background: theme === 'dark' ? '#000000' : "#ffffff",
+        backgroundColor: theme === 'dark' ? "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)" : "linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%)",
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
@@ -144,18 +146,13 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      {/* this btn is from https://ui.aceternity.com/components/tailwindcss-buttons border magic */}
-      {/* change rounded-lg, text-purple px-5 py-2 */}
-      {/* remove focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 cuz we don't need to focus */}
-      {/* remove text-sm font-medium h-12 , add font-bold text-2xl */}
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
-          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+          className="absolute inset-[-1000%] dark:animate-[spin_8s_linear_infinite] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#E1FF01_0%,#000000_50%,#E1FF01_100%)] bg-primary"
         />
         <span
           className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+        justify-center rounded-full bg-primary/50 px-5 py-2 dark:text-black text-background backdrop-blur-3xl font-bold"
         >
           {order}
         </span>
