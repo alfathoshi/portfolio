@@ -13,13 +13,13 @@ export function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return null;
+    return null
   }
 
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="fixed top-10 right-10 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 dark:bg-black/30 dark:hover:bg-black/50 border border-white/20 dark:border-white/10 transition-all duration-300 shadow-lg hover:shadow-xl"
+      className="items-center justify-center flex w-12 h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 dark:bg-black/30 dark:hover:bg-black/50 border border-white/20 dark:border-white/10 transition-all duration-300 shadow-lg hover:shadow-xl"
       aria-label="Toggle theme"
       title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >

@@ -13,7 +13,7 @@ const Hero = () => {
             <div>
                 <GridBackground />
             </div>
-            <div className='flex flex-col md:flex-row justify-center items-center relative my-12 z-12'>
+            <div className='flex flex-col md:flex-row justify-center items-center relative my-12 z-12 gap-4 sm:gap-12'>
                 <CometCard
                     rotateDepth={20}
                     translateDepth={20}

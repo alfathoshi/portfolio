@@ -60,7 +60,6 @@ export const CometCard = ({
     rgba(255,255,255,0) 80%)
   `;
 
-  // 💫 Intro tilt animation
   useEffect(() => {
     x.set(-0.3);
     y.set(0.3);
@@ -73,15 +72,15 @@ export const CometCard = ({
     return () => clearTimeout(timeout);
   }, []);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMove = (clientX: number, clientY: number) => {
     if (!ref.current) return;
 
     const rect = ref.current.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
 
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
+    const mouseX = clientX - rect.left;
+    const mouseY = clientY - rect.top;
 
     const xPct = mouseX / width - 0.5;
     const yPct = mouseY / height - 0.5;
@@ -90,7 +89,20 @@ export const CometCard = ({
     y.set(yPct);
   };
 
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    handleMove(e.clientX, e.clientY);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    handleMove(e.touches[0].clientX, e.touches[0].clientY);
+  };
+
   const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  const handleTouchEnd = () => {
     x.set(0);
     y.set(0);
   };
@@ -101,10 +113,18 @@ export const CometCard = ({
         ref={ref}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchMove}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         whileHover={{
+          scale: 1.05,
+          z: 50,
+          transition: { duration: 0.2 },
+        }}
+        whileTap={{
           scale: 1.05,
           z: 50,
           transition: { duration: 0.2 },
@@ -123,7 +143,7 @@ export const CometCard = ({
           className="pointer-events-none absolute inset-0 z-50 h-full w-full rounded-[16px] mix-blend-overlay"
           style={{
             background: glareBackground,
-            opacity: 0.6,
+            opacity: 0.3,
           }}
           transition={{ duration: 0.2 }}
         />
