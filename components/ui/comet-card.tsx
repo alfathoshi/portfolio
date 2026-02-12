@@ -25,8 +25,8 @@ export const CometCard = ({
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const mouseXSpring = useSpring(x, { stiffness: 150, damping: 15 });
-  const mouseYSpring = useSpring(y, { stiffness: 150, damping: 15 });
+  const mouseXSpring = useSpring(x);
+  const mouseYSpring = useSpring(y);
 
   const rotateX = useTransform(
     mouseYSpring,
