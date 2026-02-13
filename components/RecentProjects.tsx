@@ -5,6 +5,7 @@ import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
 import { useTheme } from "next-themes";
+import { Carousel, Card } from './ui/apple-cards-carousel';
 
 const RecentProjects = () => {
     const { theme, setTheme } = useTheme();
@@ -14,42 +15,36 @@ const RecentProjects = () => {
                 A small selection of {' '}
                 <span className='text-primary'>recent projects</span>
             </h1>
-            <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>
-                {projects.map(({ id, title, des, img, iconLists, link }) => (
-                    <div key={id} className='sm:h-164 h-128 lg:min-h-130 flex items-center justify-center sm:w-142.5 w-[80vw]'>
-                        <PinContainer title={title} href={link}>
-                            <div className='relative flex items-center justify-center sm:w-142.5 w-[80vw] sm:h-[40vh] overflow-hidden h-[30vh] mb-10'>
-                                <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                    <img src="/bg.png" alt="bg-img" />
+            <div className='w-full h-full'>
+
+                <Carousel items={projects.map((project, index) => (
+                    <Card key={project.id} card={{
+                        src: project.img,
+                        title: project.title,
+                        category: "Project",
+                        content: (
+                            <div className="flex flex-col gap-4 w-full">
+                                <p className="text-neutral-200 text-xs font-sans max-w-sm">
+                                    {project.des}
+                                </p>
+                                <div className='flex items-center justify-between mt-2'>
+                                    <div className='flex items-center'>
+                                        {project.iconLists.map((icon, index) => (
+                                            <div key={icon} className='dark:border-white/20 border border-black/20 rounded-full  bg-white lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center' style={{
+                                                transform: `translateX(-${5 * index * 2}px)`
+                                            }}>
+                                                <img src={icon} alt={icon} className='p-2' />
+                                            </div>
+                                        ))}
+                                    </div>
+
                                 </div>
-                                <img src={img} alt={title} className="z-10 absolute bottom-0 w-full h-full" />
                             </div>
-                            <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
-                                {title}
-                            </h1>
-                            <p className='lg:text-xl lg:font-light text-sm line-clamp-2'>
-                                {des}
-                            </p>
-                            <div className='flex items-center justify-between mt-7 mb-3'>
-                                <div className='flex items-center'>
-                                    {iconLists.map((icon, index) => (
-                                        <div key={icon} className='dark:border-white/20 border border-black/20   rounded-full dark:bg-black bg-white lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center' style={{
-                                            transform: `translateX(-${5 * index * 2}px)`
-                                        }}>
-                                            <img src={icon} alt={icon} className='p-2' />
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className='flex justify-center items-center'>
-                                    <p className='flex lg:text-xl md:text:xs text-sm text-primary'>Check Live Site</p>
-                                    <FaLocationArrow className='ms-3' color={theme === "dark" ? "#E1FF01" : "#628141" } />
-                                </div>
-                                
-                            </div>
-                        </PinContainer>
-                    </div>
-                ))}
+                        )
+                    }} index={index} />
+                ))} />
             </div>
+
         </div>
     )
 }
