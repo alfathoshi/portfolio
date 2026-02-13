@@ -202,7 +202,7 @@ export const Card = ({
         <div className="absolute inset-0 z-30 flex flex-col justify-end h-full">
           {/* Default Overlay & Text - Hidden on Hover/Open */}
           <div className={cn(
-            "absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent transition-opacity duration-500",
+            "absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent transition-opacity duration-500",
             open ? "opacity-0" : "group-hover:opacity-0"
           )} />
           <div className={cn(

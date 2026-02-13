@@ -21,7 +21,7 @@ const RecentProjects = () => {
                     <Card key={project.id} card={{
                         src: project.img,
                         title: project.title,
-                        category: "Project",
+                        category: project.tag,
                         content: (
                             <div className="flex flex-col gap-4 w-full">
                                 <p className="text-neutral-200 text-xs font-sans max-w-sm">

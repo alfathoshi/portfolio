@@ -12,7 +12,7 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "h-full w-full",
-    titleClassName: "justify-end",
+    titleClassName: "justify-end dark:text-black",
     img: "/portrait2.jpg",
     spareImg: "",
   },
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building ...",
+    title: "Currently building my portfolio using NextJS",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,35 +72,30 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    tag: "Mental Health App",
     title: "Teman Bicara",
     des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
-    img: "/iphone17pro.png",
-    iconLists: ["/flutter.svg"],
+    img: "/project1.png",
+    iconLists: ["/flutter.svg", "/firebase.svg", "/gemini.svg", "/laravel.svg", "/midtrans.png", "/nginx.svg", "/azure.svg", "/mysql.svg"],
     link: "https://github.com/TemanBicara/temanbicara-mobile",
   },
   {
     id: 2,
-    title: "Teman Bicara",
-    des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
-    img: "/iphone17pro.png",
-    iconLists: ["/flutter.svg"],
-    link: "https://github.com/TemanBicara/temanbicara-mobile",
+    tag: "Product Catalog App",
+    title: "HUMIC Product Catalog Mobile",
+    des: "HUMIC Product Catalog App is a mobile application that provides a platform for users to view products from HUMIC Research Center.",
+    img: "/project2.png",
+    iconLists: ["/flutter.svg", "/firebase.svg"],
+    link: "https://github.com/",
   },
   {
     id: 3,
-    title: "Teman Bicara",
-    des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
-    img: "/iphone17pro.png",
-    iconLists: ["/flutter.svg"],
-    link: "https://github.com/TemanBicara/temanbicara-mobile",
-  },
-  {
-    id: 4,
-    title: "Teman Bicara",
-    des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
-    img: "/iphone17pro.png",
-    iconLists: ["/flutter.svg"],
-    link: "https://github.com/TemanBicara/temanbicara-mobile",
+    tag: "Immunization App",
+    title: "BeHealthy",
+    des: "BeHealthy is a mobile application that provides a platform for users to track their immunization records and get reminders for upcoming vaccinations.",
+    img: "/project3.png",
+    iconLists: ["/flutter.svg", "/firebase.svg"],
+    link: "https://github.com/",
   },
 ];
 
@@ -204,14 +199,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/github.svg",
+    link: "https://github.com/alfathoshi",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/alfathoshi/",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/instagram.svg",
+    link: "https://www.instagram.com/_alfathoshi/",
   },
 ];
