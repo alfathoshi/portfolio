@@ -97,39 +97,47 @@ export const projects = [
     iconLists: ["/flutter.svg", "/firebase.svg"],
     link: "https://github.com/",
   },
+  {
+    id: 4,
+    tag: "Upcoming App",
+    title: "Unknown",
+    des: "Coming soon...",
+    img: "/project4.png",
+    iconLists: [],
+    link: "https://github.com/alfathoshi",
+  },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    designation: "Director of AlphaStream Technologies",
+    src: "/asprak1.jpg"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    designation: "Director of AlphaStream Technologies",
+    src: "/asprak2.jpg"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    designation: "Director of AlphaStream Technologies",
+    src: "/asprak1.jpg"
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Adrian",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    designation: "Director of AlphaStream Technologies",
+    src: "/asprak2.jpg"
   },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+
 ];
 
 export const companies = [
@@ -211,5 +219,50 @@ export const socialMedia = [
     id: 3,
     img: "/instagram.svg",
     link: "https://www.instagram.com/_alfathoshi/",
+  },
+];
+
+export const items = [
+  {
+    title: "Motion 1",
+    image:
+      "/motion1.jpg",
+    className: "absolute top-10 left-[20%] rotate-[-5deg]",
+  },
+  {
+    title: "Motion 2",
+    image:
+      "/motion2.png",
+    className: "absolute top-40 left-[25%] rotate-[-7deg]",
+  },
+  {
+    title: "Motion 1",
+    image:
+      "/motion1.jpg",
+    className: "absolute top-5 left-[40%] rotate-[8deg]",
+  },
+  {
+    title: "Motion 2",
+    image:
+      "/motion2.png",
+    className: "absolute top-32 left-[55%] rotate-[10deg]",
+  },
+  {
+    title: "Motion 1",
+    image:
+      "/motion1.jpg",
+    className: "absolute top-20 right-[35%] rotate-[2deg]",
+  },
+  {
+    title: "Motion 2",
+    image:
+      "/motion2.png",
+    className: "absolute top-24 left-[45%] rotate-[-7deg]",
+  },
+  {
+    title: "Motion 1",
+    image:
+      "/motion1.jpg",
+    className: "absolute top-8 left-[30%] rotate-[4deg]",
   },
 ];
