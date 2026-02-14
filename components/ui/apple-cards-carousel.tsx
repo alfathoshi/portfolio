@@ -74,9 +74,9 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
   const handleCardChange = (index: number) => {
     if (carouselRef.current) {
-      const cardWidth = 240;
+      const cardWidth = 320;
       const gap = 16;
-      const scrollPosition = (cardWidth + gap) * index;
+      const scrollPosition = (cardWidth + gap) * (index);
       carouselRef.current.scrollTo({
         left: scrollPosition,
         behavior: "smooth",
@@ -189,7 +189,7 @@ export const Card = ({
       layoutId={layout ? `card-${card.title}` : undefined}
       ref={containerRef}
       onClick={handleOpen}
-     
+
       onTouchStart={() => {
         isTouchRef.current = true;
       }}

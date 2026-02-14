@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I don’t just build features, but I think about how they actually feel to the user.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "h-full w-full",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Mobile enthusiast with a passion for development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building my portfolio using NextJS",
+    title: "Currently building my portfolio using Next.js",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -128,14 +128,14 @@ export const testimonials = [
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/asprak1.jpg"
+    src: "/abdimas1.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/asprak2.jpg"
+    src: "/abdimas2.jpg"
   },
 
 ];
@@ -224,45 +224,45 @@ export const socialMedia = [
 
 export const items = [
   {
-    title: "Motion 1",
+    title: "Nominated as The Best Hacker",
     image:
       "/motion1.jpg",
     className: "absolute top-10 left-[20%] rotate-[-5deg]",
   },
   {
-    title: "Motion 2",
+    title: "Motion Lab 8.0",
     image:
-      "/motion2.png",
+      "/motion2.jpeg",
     className: "absolute top-40 left-[25%] rotate-[-7deg]",
   },
   {
-    title: "Motion 1",
+    title: "MC at Networking Night",
     image:
-      "/motion1.jpg",
+      "/motion3.jpg",
     className: "absolute top-5 left-[40%] rotate-[8deg]",
   },
   {
-    title: "Motion 2",
+    title: "Public Relations and Design",
     image:
-      "/motion2.png",
+      "/motion4.jpg",
     className: "absolute top-32 left-[55%] rotate-[10deg]",
   },
   {
-    title: "Motion 1",
+    title: "It's a Wrap Study Group!",
     image:
-      "/motion1.jpg",
+      "/motion5.png",
     className: "absolute top-20 right-[35%] rotate-[2deg]",
   },
   {
-    title: "Motion 2",
+    title: "Mentor at Study Group",
     image:
-      "/motion2.png",
+      "/motion6.png",
     className: "absolute top-24 left-[45%] rotate-[-7deg]",
   },
   {
-    title: "Motion 1",
+    title: "Speaker for Mobile Course Response",
     image:
-      "/motion1.jpg",
+      "/motion7.jpg",
     className: "absolute top-8 left-[30%] rotate-[4deg]",
   },
 ];

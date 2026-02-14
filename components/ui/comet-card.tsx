@@ -135,7 +135,7 @@ export const CometCard = ({
           translateX,
           translateY,
         }}
-        className="relative rounded-2xl"
+        className="relative rounded-2xl touch-none"
       >
         {children}
 

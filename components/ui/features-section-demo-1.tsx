@@ -21,7 +21,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Leadership & Community",
       description:
-        "Core Member — Google Developer Group on Campus (GDGoC)",
+        "Mentor & Curriculum Division — Google Developer Group on Campus (GDGoC)",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
@@ -34,9 +34,9 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Academic & Teaching Experience",
+      title: "Academic Experience & Community Engagement",
       description:
-        "Teaching and Practicum Assistant",
+        "Teaching and Practicum Assistant & Community Service Program",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -140,10 +140,16 @@ export const SkeletonThree = () => {
 };
 
 export const SkeletonTwo = () => {
-  const images = [
+  const images1 = [
     "/gdgoc1.png",
     "/gdgoc2.jpg",
+    "/gdgoc5.png",
+  ];
+
+  const images2 = [
+    "/gdgoc4.jpg",
     "/gdgoc3.jpg",
+    "/gdgoc6.jpg",
   ];
 
   const imageVariants = {
@@ -162,7 +168,7 @@ export const SkeletonTwo = () => {
     <div className="relative flex h-full flex-col items-start gap-10 overflow-hidden p-8">
       {/* TODO */}
       <div className="md:-ml-20  flex flex-row">
-        {images.map((image, idx) => (
+        {images1.map((image, idx) => (
           <motion.div
             variants={imageVariants}
             key={"images-first" + idx}
@@ -183,8 +189,8 @@ export const SkeletonTwo = () => {
           </motion.div>
         ))}
       </div>
-      <div className="flex flex-row">
-        {images.map((image, idx) => (
+      <div className="md:-ml-20 flex flex-row">
+        {images2.map((image, idx) => (
           <motion.div
             key={"images-second" + idx}
             style={{
