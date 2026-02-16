@@ -20,7 +20,7 @@ const Hero = () => {
                     className="flex justify-center items-center h-full w-full"
                 >
                     <Image
-                        src="/portrait.jpg"
+                        src="https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/portrait.jpg"
                         alt="Profile"
                         width={300}
                         height={400}
