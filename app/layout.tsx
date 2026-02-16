@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { BackToTopButton } from "@/components/ui/back-to-top-botton";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
           <BackToTopButton />
         </ThemeProvider>
       </body>
