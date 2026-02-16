@@ -5,6 +5,7 @@ import { ThemeProvider } from "./provider";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { BackToTopButton } from "@/components/ui/back-to-top-botton";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
         >
           {children}
           <Analytics />
+          <SpeedInsights />
           <BackToTopButton />
         </ThemeProvider>
       </body>
