@@ -114,28 +114,28 @@ export const testimonials = [
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/asprak1.jpg"
+    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/asprak1.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/asprak2.jpg"
+    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/asprak2.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/abdimas1.jpg"
+    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/abdimas1.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/abdimas2.jpg"
+    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/abdimas2.jpg"
   },
 
 ];
