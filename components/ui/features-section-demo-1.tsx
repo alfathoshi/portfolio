@@ -102,7 +102,7 @@ export const SkeletonOne = () => {
         <div className="flex h-full w-full flex-1 flex-col space-y-2">
           {/* TODO */}
           <img
-            src="https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/telkomsel.jpg"
+            src="/telkomsel.jpg"
             alt="header"
             width={800}
             height={800}
@@ -141,15 +141,15 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images1 = [
-    "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/gdgoc1.png",
-    "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/gdgoc2.jpg",
-    "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/gdgoc5.png",
+    "/gdgoc1.png",
+    "/gdgoc2.jpg",
+    "/gdgoc5.png",
   ];
 
   const images2 = [
-    "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/gdgoc4.jpg",
-    "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/gdgoc3.jpg",
-    "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/gdgoc6.jpg",
+    "/gdgoc4.jpg",
+    "/gdgoc3.jpg",
+    "/gdgoc6.jpg",
   ];
 
   const imageVariants = {

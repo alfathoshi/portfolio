@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "h-full w-full",
     titleClassName: "justify-end dark:text-black",
-    img: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/portrait2.jpg",
+    img: "/portrait2.jpg",
     spareImg: "",
   },
   {
@@ -75,7 +75,7 @@ export const projects = [
     tag: "Mental Health App",
     title: "Teman Bicara",
     des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
-    img: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/project1.png",
+    img: "/project1.png",
     iconLists: ["/flutter.svg", "/firebase.svg", "/gemini.svg", "/laravel.svg", "/midtrans.png", "/nginx.svg", "/azure.svg", "/mysql.svg"],
     link: "https://github.com/TemanBicara/temanbicara-mobile",
   },
@@ -84,7 +84,7 @@ export const projects = [
     tag: "Product Catalog App",
     title: "HUMIC Product Catalog Mobile",
     des: "HUMIC Product Catalog App is a mobile application that provides a platform for users to view products from HUMIC Research Center.",
-    img: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/project2.png",
+    img: "/project2.png",
     iconLists: ["/flutter.svg", "/firebase.svg"],
     link: "https://github.com/",
   },
@@ -93,7 +93,7 @@ export const projects = [
     tag: "Immunization App",
     title: "BeHealthy",
     des: "BeHealthy is a mobile application that provides a platform for users to track their immunization records and get reminders for upcoming vaccinations.",
-    img: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/project3.png",
+    img: "/project3.png",
     iconLists: ["/flutter.svg", "/firebase.svg"],
     link: "https://github.com/",
   },
@@ -102,7 +102,7 @@ export const projects = [
     tag: "Upcoming App",
     title: "Unknown",
     des: "Coming soon...",
-    img: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/project4.png",
+    img: "/project4.png",
     iconLists: [],
     link: "https://github.com/alfathoshi",
   },
@@ -114,28 +114,28 @@ export const testimonials = [
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/asprak1.jpg"
+    src: "/asprak1.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/asprak2.jpg"
+    src: "/asprak2.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/abdimas1.jpg"
+    src: "/abdimas1.jpg"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/abdimas2.jpg"
+    src: "/abdimas2.jpg"
   },
 
 ];
@@ -226,43 +226,43 @@ export const items = [
   {
     title: "Nominated as The Best Hacker",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion1.jpg",
+      "/motion1.jpg",
     className: "absolute top-10 left-[20%] rotate-[-5deg]",
   },
   {
     title: "Motion Lab 8.0",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion2.jpeg",
+      "/motion2.jpeg",
     className: "absolute top-40 left-[25%] rotate-[-7deg]",
   },
   {
     title: "MC at Networking Night",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion3.jpg",
+      "/motion3.jpg",
     className: "absolute top-5 left-[40%] rotate-[8deg]",
   },
   {
     title: "Public Relations and Design",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion4.jpg",
+      "/motion4.jpg",
     className: "absolute top-32 left-[55%] rotate-[10deg]",
   },
   {
     title: "It's a Wrap Study Group!",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion5.png",
+      "/motion5.png",
     className: "absolute top-20 right-[35%] rotate-[2deg]",
   },
   {
     title: "Mentor at Study Group",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion6.png",
+      "/motion6.png",
     className: "absolute top-24 left-[45%] rotate-[-7deg]",
   },
   {
     title: "Speaker for Mobile Course Response",
     image:
-      "https://lj4cwr5dia3o8org.public.blob.vercel-storage.com/motion7.jpg",
+      "/motion7.jpg",
     className: "absolute top-8 left-[30%] rotate-[4deg]",
   },
 ];
