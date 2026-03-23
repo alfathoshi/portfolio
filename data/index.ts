@@ -71,6 +71,15 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 4,
+    tag: "Dictionary App",
+    title: "Newblie",
+    des: "Newblie is a mobile application that provides a platform for users to learn new Balinese words and phrases.",
+    img: "/project5.png",
+    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    link: "https://github.com/alfathoshi/Newblie",
+  },
+  {
     id: 1,
     tag: "Mental Health App",
     title: "Teman Bicara",
@@ -98,7 +107,7 @@ export const projects = [
     link: "https://github.com/",
   },
   {
-    id: 4,
+    id: 5,
     tag: "Upcoming App",
     title: "Unknown",
     des: "Coming soon...",
