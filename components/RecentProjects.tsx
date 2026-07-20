@@ -22,9 +22,11 @@ const RecentProjects = () => {
                         src: project.img,
                         title: project.title,
                         category: project.tag,
+                        screenshots: project.screenshots,
+                        link: project.link,
                         content: (
                             <div className="flex flex-col gap-4 w-full">
-                                <p className="text-neutral-200 text-xs font-sans max-w-sm">
+                                <p className="text-xs font-sans max-w-sm">
                                     {project.des}
                                 </p>
                                 <div className='flex items-center justify-between mt-2'>
