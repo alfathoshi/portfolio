@@ -1,5 +1,5 @@
 export const navItems = [
-  { name: "About", link: "#about" },
+  // { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
@@ -71,7 +71,27 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 6,
+    id: 5,
+    tag: "Children's Sex Education App",
+    title: "Nomi",
+    des: "Nomi is an interactive educational app that helps children aged 6–9 learn about body safety, personal boundaries, and healthy habits through engaging stories, games, quizzes, animations, and audio experiences in a safe, age-appropriate environment.",
+    img: "/nomi_1.png",
+    screenshots: [
+      "/nomi_1.png",
+      "/nomi_2.png",
+      "/nomi_3.png",
+      "/nomi_4.png",
+      "/nomi_5.png",
+      "/nomi_6.png",
+      "/nomi_7.png",
+      "/nomi_8.png",
+      "/nomi_9.png"
+    ],
+    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    link: "https://testflight.apple.com/join/CfVMyB8z",
+  },
+  {
+    id: 4,
     tag: "Digital Scrapbook App",
     title: "BlooBook",
     des: "BlooBook is a mobile application that transforms everyday moments into personalized stamp and polaroid memories. Capture photos, customize them with unique styles, and arrange them into beautiful digital albums to preserve your stories in a more meaningful way.",
@@ -88,17 +108,17 @@ export const projects = [
     link: "https://testflight.apple.com/join/RPawJCsC",
   },
   {
-    id: 4,
+    id: 3,
     tag: "Dictionary App",
     title: "Newblie",
     des: "Newblie is a mobile application that provides a platform for users to learn new Balinese words and phrases.",
     img: "/project5.png",
     screenshots: ["/project5.png"],
     iconLists: ["/swiftui.png", "/swiftdata.webp"],
-    link: "https://github.com/alfathoshi/Newblie",
+    link: "https://testflight.apple.com/join/DHNasJn6",
   },
   {
-    id: 1,
+    id: 2,
     tag: "Mental Health App",
     title: "Teman Bicara",
     des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
@@ -108,34 +128,14 @@ export const projects = [
     link: "https://github.com/TemanBicara/temanbicara-mobile",
   },
   {
-    id: 2,
-    tag: "Product Catalog App",
-    title: "HUMIC Product Catalog Mobile",
-    des: "HUMIC Product Catalog App is a mobile application that provides a platform for users to view products from HUMIC Research Center.",
-    img: "/project2.png",
-    screenshots: ["/project2.png"],
-    iconLists: ["/flutter.svg", "/firebase.svg"],
-    link: "https://github.com/",
-  },
-  {
-    id: 3,
+    id: 1,
     tag: "Immunization App",
     title: "BeHealthy",
     des: "BeHealthy is a mobile application that provides a platform for users to track their immunization records and get reminders for upcoming vaccinations.",
     img: "/project3.png",
     screenshots: ["/project3.png"],
     iconLists: ["/flutter.svg", "/firebase.svg"],
-    link: "https://github.com/",
-  },
-  {
-    id: 5,
-    tag: "Upcoming App",
-    title: "Unknown",
-    des: "Coming soon...",
-    img: "/project4.png",
-    screenshots: ["/project4.png"],
-    iconLists: [],
-    link: "https://github.com/alfathoshi",
+    link: "https://github.com/alfathoshi/team13_motionhack",
   },
 ];
 

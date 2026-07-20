@@ -11,10 +11,12 @@ const RecentProjects = () => {
     const { theme, setTheme } = useTheme();
     return (
         <div className='py-20' id='projects'>
-            <h1 className='heading'>
-                A small selection of {' '}
-                <span className='text-primary'>recent projects</span>
-            </h1>
+            <div className="relative z-20 mb-10">
+                <h1 className="font-bold text-4xl md:text-5xl text-center text-black dark:text-white">
+                    A small selection of{" "}
+                    <span className="text-primary">recent projects</span>
+                </h1>
+            </div>
             <div className='w-full h-full'>
 
                 <Carousel items={projects.map((project, index) => (

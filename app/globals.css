@@ -132,11 +132,22 @@
 
 
 /* 3. Utilities (Custom BG Grid & Dots) */
-@layer utilities {
-  .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
-  }
+.heading {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: var(--foreground, #000000);
+}
 
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@layer utilities {
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
@@ -280,6 +291,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
