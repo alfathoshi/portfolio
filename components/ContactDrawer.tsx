@@ -72,7 +72,7 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
         setIsSuccess(true);
         console.log("Form Submitted (Simulation Mode - No NEXT_PUBLIC_WEB3FORMS_KEY found):", formData);
         setFormData({ name: "", email: "", subject: "", message: "" });
-        
+
         // Auto close after 3 seconds
         setTimeout(() => {
           setIsSuccess(false);
@@ -194,11 +194,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="John Doe"
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
-                        errors.name
-                          ? "border-red-500 focus:ring-red-500"
-                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
-                      }`}
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${errors.name
+                        ? "border-red-500 focus:ring-red-500"
+                        : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
+                        }`}
                     />
                     {errors.name && (
                       <p className="mt-1 text-xs text-red-500">{errors.name}</p>
@@ -217,11 +216,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="johndoe@example.com"
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
-                        errors.email
-                          ? "border-red-500 focus:ring-red-500"
-                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
-                      }`}
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${errors.email
+                        ? "border-red-500 focus:ring-red-500"
+                        : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
+                        }`}
                     />
                     {errors.email && (
                       <p className="mt-1 text-xs text-red-500">{errors.email}</p>
@@ -240,11 +238,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="Project Collaboration"
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
-                        errors.subject
-                          ? "border-red-500 focus:ring-red-500"
-                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
-                      }`}
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${errors.subject
+                        ? "border-red-500 focus:ring-red-500"
+                        : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
+                        }`}
                     />
                     {errors.subject && (
                       <p className="mt-1 text-xs text-red-500">{errors.subject}</p>
@@ -263,11 +260,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="Hey, I'd love to chat about building a mobile app..."
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 resize-none ${
-                        errors.message
-                          ? "border-red-500 focus:ring-red-500"
-                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
-                      }`}
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 resize-none ${errors.message
+                        ? "border-red-500 focus:ring-red-500"
+                        : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
+                        }`}
                     />
                     {errors.message && (
                       <p className="mt-1 text-xs text-red-500">{errors.message}</p>
@@ -285,9 +281,9 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full relative flex h-12 items-center justify-center overflow-hidden rounded-full p-px text-sm font-medium focus:outline-none disabled:opacity-50 hover:opacity-95 transition"
+                      className="w-full relative flex h-12 items-center justify-center overflow-hidden rounded-full p-px text-sm font-medium disabled:opacity-50 hover:opacity-95 transition"
                     >
-                      <span className="absolute inset-[-1000%] animate-[spin_8s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E1FF01_0%,#000000_50%,#E1FF01_100%)]" />
+                      <span className="absolute inset-[-1000%] dark:animate-[spin_8s_linear_infinite] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#E1FF01_0%,#000000_50%,#E1FF01_100%)] bg-primary" />
                       <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-7 backdrop-blur-3xl transition text-white dark:text-black">
                         {isSubmitting ? (
                           <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent" />
