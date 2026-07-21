@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <div className='pb-72 pt-72'>
+        <div className='pb-72 pt-64'>
             <div>
                 <GridBackground />
             </div>
