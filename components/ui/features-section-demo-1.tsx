@@ -124,7 +124,7 @@ export const SkeletonThree = () => {
         So many memories of the past.
       </p>
       {items.map((item) => (
-        <DraggableCardBody className={item.className}>
+        <DraggableCardBody key={item.title} className={item.className}>
           <img
             src={item.image}
             alt={item.title}
@@ -173,7 +173,7 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             key={"images-first" + idx}
             style={{
-              rotate: Math.random() * 20 - 10,
+              rotate: ((idx * 13) % 21) - 10,
             }}
             whileHover="whileHover"
             whileTap="whileTap"
@@ -194,7 +194,7 @@ export const SkeletonTwo = () => {
           <motion.div
             key={"images-second" + idx}
             style={{
-              rotate: Math.random() * 20 - 10,
+              rotate: ((idx * 7) % 21) - 10,
             }}
             variants={imageVariants}
             whileHover="whileHover"

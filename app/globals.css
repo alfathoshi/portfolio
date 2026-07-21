@@ -302,4 +302,11 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Prevent browser autofill from styling inputs with light blue background */
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 600000s ease-in-out 0s !important;
+  }
 }

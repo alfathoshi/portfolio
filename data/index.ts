@@ -71,6 +71,27 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 6,
+    tag: "Group Travel App",
+    title: "Omawe",
+    des: "Plan together, navigate together, and travel together. Omawe simplifies group trips with shared itineraries, invitations, and real-time location tracking.",
+    img: "/omawe_1.png",
+    screenshots: [
+      "/omawe_1.png",
+      "/omawe_2.png",
+      "/omawe_3.png",
+      "/omawe_4.png",
+      "/omawe_5.png",
+      "/omawe_6.png",
+      "/omawe_7.png",
+      "/omawe_8.png",
+      "/omawe_9.png",
+      "/omawe_10.png"
+    ],
+    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    link: "https://testflight.apple.com/join/9b4DaTtE",
+  },
+  {
     id: 5,
     tag: "Children's Sex Education App",
     title: "Nomi",
