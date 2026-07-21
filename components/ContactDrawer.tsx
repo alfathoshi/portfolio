@@ -127,24 +127,24 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed right-0 top-0 z-55 h-screen w-full max-w-md border-l border-white/10 bg-neutral-950 p-6 shadow-2xl flex flex-col md:p-8 text-white"
+            className="fixed right-0 top-0 z-55 h-screen w-full max-w-md border-l border-neutral-200 dark:border-white/10 bg-white dark:bg-neutral-950 p-6 shadow-2xl flex flex-col md:p-8 text-neutral-900 dark:text-white"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+            <div className="flex items-center justify-between border-b border-neutral-200 dark:border-white/10 pb-4 mb-6">
               <div>
                 <h2 className="text-2xl font-bold bg-linear-to-r from-primary to-[#b8d600] bg-clip-text text-transparent">
                   Get in Touch
                 </h2>
-                <p className="text-sm text-neutral-400 mt-1">
+                <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">
                   Fill out the form below or email me directly at{" "}
-                  <a href="mailto:alfathbintangmuhammad@gmail.com" className="text-primary hover:underline">
+                  <a href="mailto:alfathbintangmuhammad@gmail.com" className="text-primary hover:underline font-semibold">
                     alfathbintangmuhammad@gmail.com
                   </a>
                 </p>
               </div>
               <button
                 onClick={onClose}
-                className="rounded-full p-2 hover:bg-white/10 text-neutral-400 hover:text-white transition"
+                className="rounded-full p-2 hover:bg-neutral-100 dark:hover:bg-white/10 text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition"
                 aria-label="Close panel"
               >
                 <IconX size={24} />
@@ -164,7 +164,7 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                     <IconCheck size={36} />
                   </div>
                   <h3 className="text-xl font-bold mb-2">Message Sent!</h3>
-                  <p className="text-neutral-400 max-w-xs">
+                  <p className="text-neutral-500 dark:text-neutral-400 max-w-xs">
                     Thank you for reaching out! I have received your message and will get back to you as soon as possible.
                   </p>
                 </motion.div>
@@ -173,7 +173,7 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                 <form onSubmit={handleSubmit} className="space-y-5 p-1">
                   {/* Name Input */}
                   <div>
-                    <label className="block text-sm font-medium text-neutral-300 mb-2">
+                    <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                       Name
                     </label>
                     <input
@@ -183,10 +183,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="John Doe"
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-900 px-4 py-3 text-white placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
                         errors.name
                           ? "border-red-500 focus:ring-red-500"
-                          : "border-white/10 focus:border-transparent focus:ring-primary"
+                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
                       }`}
                     />
                     {errors.name && (
@@ -196,7 +196,7 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
 
                   {/* Email Input */}
                   <div>
-                    <label className="block text-sm font-medium text-neutral-300 mb-2">
+                    <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                       Email
                     </label>
                     <input
@@ -206,10 +206,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="johndoe@example.com"
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-900 px-4 py-3 text-white placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
                         errors.email
                           ? "border-red-500 focus:ring-red-500"
-                          : "border-white/10 focus:border-transparent focus:ring-primary"
+                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
                       }`}
                     />
                     {errors.email && (
@@ -219,7 +219,7 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
 
                   {/* Subject Input */}
                   <div>
-                    <label className="block text-sm font-medium text-neutral-300 mb-2">
+                    <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                       Subject
                     </label>
                     <input
@@ -229,10 +229,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="Project Collaboration"
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-900 px-4 py-3 text-white placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 ${
                         errors.subject
                           ? "border-red-500 focus:ring-red-500"
-                          : "border-white/10 focus:border-transparent focus:ring-primary"
+                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
                       }`}
                     />
                     {errors.subject && (
@@ -242,7 +242,7 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
 
                   {/* Message Input */}
                   <div>
-                    <label className="block text-sm font-medium text-neutral-300 mb-2">
+                    <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                       Message
                     </label>
                     <textarea
@@ -252,10 +252,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                       onChange={handleChange}
                       placeholder="Hey, I'd love to chat about building a mobile app..."
                       disabled={isSubmitting}
-                      className={`w-full rounded-lg border bg-neutral-900 px-4 py-3 text-white placeholder-neutral-500 transition focus:outline-none focus:ring-2 resize-none ${
+                      className={`w-full rounded-lg border bg-neutral-50 dark:bg-neutral-900 px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition focus:outline-none focus:ring-2 resize-none ${
                         errors.message
                           ? "border-red-500 focus:ring-red-500"
-                          : "border-white/10 focus:border-transparent focus:ring-primary"
+                          : "border-neutral-200 dark:border-white/10 focus:border-transparent focus:ring-primary"
                       }`}
                     />
                     {errors.message && (
@@ -274,12 +274,12 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full relative flex h-12 items-center justify-center overflow-hidden rounded-full p-px text-sm font-medium text-black focus:outline-none disabled:opacity-50 hover:opacity-95 transition"
+                      className="w-full relative flex h-12 items-center justify-center overflow-hidden rounded-full p-px text-sm font-medium focus:outline-none disabled:opacity-50 hover:opacity-95 transition"
                     >
                       <span className="absolute inset-[-1000%] animate-[spin_8s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E1FF01_0%,#000000_50%,#E1FF01_100%)]" />
-                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-7 backdrop-blur-3xl transition">
+                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-7 backdrop-blur-3xl transition text-white dark:text-black">
                         {isSubmitting ? (
-                          <div className="h-5 w-5 animate-spin rounded-full border-2 border-black border-t-transparent" />
+                          <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent" />
                         ) : (
                           <>
                             Send Message
