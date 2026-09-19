@@ -15,6 +15,8 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { FaLocationArrow } from "react-icons/fa";
+import { ShieldCheck } from "lucide-react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import Image, { ImageProps } from "next/image";
@@ -32,6 +34,7 @@ type Card = {
   content: React.ReactNode;
   screenshots?: string[];
   link?: string;
+  privacyPolicy?: string;
 };
 
 export const CarouselContext = createContext<{
@@ -458,18 +461,29 @@ export const Card = ({
                   </div>
                 </div>
 
-                {/* Bottom Part: Tech icons & Link button */}
-                <div className="mt-8 pt-6 border-t border-neutral-200 dark:border-neutral-800/80 w-full flex flex-col gap-4">
+                {/* Bottom Part: Tech icons & Action buttons */}
+                <div className="mt-8 pt-6 border-t border-neutral-200 dark:border-neutral-800/80 w-full flex flex-col sm:flex-row gap-3">
                   {card.link && (
                     <a
                       href={card.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 dark:text-black text-white font-semibold px-6 py-2.5 rounded-xl transition duration-300 cursor-pointer text-sm shadow-md"
+                      className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 dark:text-black text-white font-semibold px-6 py-2.5 rounded-xl transition duration-300 cursor-pointer text-sm shadow-md"
                     >
                       Visit Project
                       <FaLocationArrow className="w-3.5 h-3.5" />
                     </a>
+                  )}
+                  {card.privacyPolicy && (
+                    <Link
+                      href={card.privacyPolicy}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-200 font-medium px-5 py-2.5 rounded-xl transition duration-300 cursor-pointer text-sm border border-neutral-300/60 dark:border-neutral-700"
+                    >
+                      <ShieldCheck className="w-4 h-4 text-primary" />
+                      Privacy Policy
+                    </Link>
                   )}
                 </div>
               </div>

@@ -26,6 +26,7 @@ const RecentProjects = () => {
                         category: project.tag,
                         screenshots: project.screenshots,
                         link: project.link,
+                        privacyPolicy: "privacyPolicy" in project ? (project as { privacyPolicy?: string }).privacyPolicy : undefined,
                         content: (
                             <div className="flex flex-col gap-4 w-full">
                                 <p className="text-xs font-sans max-w-sm">

@@ -71,6 +71,24 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 7,
+    tag: "Spatial Memory App",
+    title: "Fragments",
+    des: "Fragments transforms how you capture and revisit memories through an interactive 3D spatial constellation. Curate memories into themed moment folders, interact with dynamic widgets, and track live sessions seamlessly via Dynamic Island & Live Activities.",
+    img: "/fragments_1.png",
+    screenshots: [
+      "/fragments_1.png",
+      "/fragments_2.png",
+      "/fragments_3.png",
+      "/fragments_4.png",
+      "/fragments_5.png",
+      "/fragments_6.png"
+    ],
+    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    link: "https://github.com/alfathoshi/fragments",
+    privacyPolicy: "/privacy/fragments",
+  },
+  {
     id: 6,
     tag: "Group Travel App",
     title: "Omawe",
