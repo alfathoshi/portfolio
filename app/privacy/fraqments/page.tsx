@@ -221,7 +221,7 @@ export default function FraqmentsPrivacyPolicy() {
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
             <Link
-              href="/privacy/fragments"
+              href="/privacy/fraqments"
               className="text-neutral-500 dark:text-neutral-400 underline decoration-neutral-300 dark:decoration-neutral-700 underline-offset-4 transition-colors hover:text-neutral-900 dark:hover:text-white"
             >
               Privacy policy
