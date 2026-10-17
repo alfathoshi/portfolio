@@ -73,8 +73,8 @@ export const projects = [
   {
     id: 7,
     tag: "Spatial Memory App",
-    title: "Fragments",
-    des: "Fragments transforms how you capture and revisit memories through an interactive 3D spatial constellation. Curate memories into themed moment folders, interact with dynamic widgets, and track live sessions seamlessly via Dynamic Island & Live Activities.",
+    title: "fraqments",
+    des: "fraqments transforms how you capture and revisit memories through an interactive 3D spatial constellation. Curate memories into themed moment folders, interact with dynamic widgets, and track live sessions seamlessly via Dynamic Island & Live Activities.",
     img: "/fragments_1.png",
     screenshots: [
       "/fragments_1.png",

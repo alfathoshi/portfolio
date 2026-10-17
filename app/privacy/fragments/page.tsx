@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Fragments",
-  description: "How Fragments collects, uses, and protects your personal information.",
+  title: "Privacy Policy | fraqments",
+  description: "How fraqments collects, uses, and protects your personal information.",
 };
 
-export default function FragmentsPrivacyPolicy() {
+export default function FraqmentsPrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white dark:bg-black-100 text-neutral-900 dark:text-white font-sans flex flex-col transition-colors duration-300">
       <main className="mx-auto max-w-3xl px-6 py-16 flex-1 w-full">
@@ -18,7 +18,7 @@ export default function FragmentsPrivacyPolicy() {
             <div className="relative size-11 rounded-[11px] overflow-hidden shadow-sm">
               <Image
                 src="/fragments-icon-light.png"
-                alt="Fragments Icon"
+                alt="fraqments Icon"
                 width={44}
                 height={44}
                 className="object-cover size-full dark:hidden"
@@ -26,15 +26,15 @@ export default function FragmentsPrivacyPolicy() {
               />
               <Image
                 src="/fragments-icon-dark.png"
-                alt="Fragments Icon"
+                alt="fraqments Icon"
                 width={44}
                 height={44}
                 className="object-cover size-full hidden dark:block"
                 priority
               />
             </div>
-            <span className="text-lg font-bold tracking-[0.18em] text-neutral-900 dark:text-white uppercase">
-              Fragments
+            <span className="text-lg font-bold tracking-[0.18em] text-neutral-900 dark:text-white lowercase">
+              fraqments
             </span>
           </Link>
           <ThemeToggle />
@@ -51,17 +51,17 @@ export default function FragmentsPrivacyPolicy() {
           <section className="space-y-3">
             <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">Introduction</h2>
             <p>
-              This Privacy Policy explains how Fragments (&quot;Fragments&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, stores, and protects your personal information when you use our iOS mobile application and related services (the &quot;Services&quot;). Fragments is a spatial memory capture application that empowers you to preserve moments both through private, on-device personal memories and collaborative real-time sessions (&quot;Shared Moments&quot;).
+              This Privacy Policy explains how fraqments (&quot;fraqments&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, stores, and protects your personal information when you use our iOS mobile application and related services (the &quot;Services&quot;). fraqments is a spatial memory capture application that empowers you to preserve moments both through private, on-device personal memories and collaborative real-time sessions (&quot;Shared Moments&quot;).
             </p>
             <p>
-              We are committed to maintaining the highest privacy and security standards in accordance with Apple&apos;s App Store Review Guidelines (including Guideline 5.1.1). By accessing or using Fragments, you acknowledge and agree to the practices described in this policy.
+              We are committed to maintaining the highest privacy and security standards in accordance with Apple&apos;s App Store Review Guidelines (including Guideline 5.1.1). By accessing or using fraqments, you acknowledge and agree to the practices described in this policy.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">On-Device Memories vs. Collaborative Cloud Storage</h2>
             <p>
-              Fragments is architected with a transparent dual-storage model designed to balance private offline preservation with seamless real-time collaboration:
+              fraqments is architected with a transparent dual-storage model designed to balance private offline preservation with seamless real-time collaboration:
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
@@ -131,7 +131,7 @@ export default function FragmentsPrivacyPolicy() {
                 <strong className="text-neutral-900 dark:text-white">Supabase:</strong> We utilize Supabase as our cloud infrastructure provider for secure PostgreSQL database hosting, encrypted media storage, and authentication management. Supabase processes data on our behalf adhering to strict security and privacy standards.
               </li>
               <li>
-                <strong className="text-neutral-900 dark:text-white">No Third-Party Advertising or Tracking:</strong> Fragments does not embed any third-party ad networks, advertising SDKs, marketing trackers, or commercial data broker libraries. We do not engage in cross-app tracking.
+                <strong className="text-neutral-900 dark:text-white">No Third-Party Advertising or Tracking:</strong> fraqments does not embed any third-party ad networks, advertising SDKs, marketing trackers, or commercial data broker libraries. We do not engage in cross-app tracking.
               </li>
               <li>
                 <strong className="text-neutral-900 dark:text-white">Legal Disclosures:</strong> We will only disclose information if required to do so by applicable law, court order, subpoena, or to protect the safety and vital interests of our users.
@@ -152,7 +152,7 @@ export default function FragmentsPrivacyPolicy() {
                 <strong className="text-neutral-900 dark:text-white">Immediate Cloud Data Purge:</strong> When you execute account deletion, your user credentials, authentication records, profile details, and user-associated data stored in our Supabase cloud database and storage are permanently and irreversibly deleted.
               </li>
               <li>
-                <strong className="text-neutral-900 dark:text-white">Local Device Data Deletion:</strong> You can delete any personal on-device moment or fragment at any time within the app. Uninstalling the Fragments app permanently erases all locally stored SwiftData records and cached media from your device.
+                <strong className="text-neutral-900 dark:text-white">Local Device Data Deletion:</strong> You can delete any personal on-device moment or fragment at any time within the app. Uninstalling the fraqments app permanently erases all locally stored SwiftData records and cached media from your device.
               </li>
               <li>
                 <strong className="text-neutral-900 dark:text-white">Data Retention:</strong> We retain cloud data associated with Shared Moments only for as long as your account and active rooms exist, or until you choose to delete them.
@@ -217,7 +217,7 @@ export default function FragmentsPrivacyPolicy() {
       <footer className="border-t border-neutral-200 dark:border-neutral-800">
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
-            © 2026 Fragments. Spatial memory &amp; moments for iOS.
+            © 2026 fraqments. Spatial memory &amp; moments for iOS.
           </p>
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
             <Link
