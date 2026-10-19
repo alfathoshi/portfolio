@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "h-full w-full",
     titleClassName: "justify-end dark:text-black",
-    img: "/portrait2.jpg",
+    img: "/portrait2.webp",
     spareImg: "",
   },
   {
@@ -75,15 +75,15 @@ export const projects = [
     tag: "Moments Journal App",
     title: "fraqments",
     des: "fraqments transforms how you capture and revisit memories through an interactive 3D spatial constellation. Curate memories into themed moment folders, interact with dynamic widgets, and track live sessions seamlessly via Dynamic Island & Live Activities.",
-    img: "/fragments_1.png",
+    img: "/fragments_1.webp",
     screenshots: [
-      "/fragments_1.png",
-      "/fragments_2.png",
-      "/fragments_3.png",
-      "/fragments_4.png",
-      "/fragments_5.png"
+      "/fragments_1.webp",
+      "/fragments_2.webp",
+      "/fragments_3.webp",
+      "/fragments_4.webp",
+      "/fragments_5.webp"
     ],
-    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp", "/supabase.png"],
+    iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp", "/supabase.webp"],
     link: "https://apps.apple.com/za/app/fragments-capture-the-moment/id6812455792",
     github: "https://github.com/alfathoshi/fragments",
     privacyPolicy: "/privacy/fraqments",
@@ -93,20 +93,20 @@ export const projects = [
     tag: "Scenario-Based Puzzle Game",
     title: "Kinario",
     des: "Kinario is a scenario-based puzzle game that helps first-time volunteers, educators, and caregivers learn how to respond empathetically to children's emotions. Grounded in 'The Whole-Brain Child' principles, players guide two kids—Rhodey and Jojo—across interactive School, Playground, and Swimming Pool chapters, complete with a rescue mini-game, illustrated Guidebook, and Apple Game Center integration.",
-    img: "/kinario/kinario-poster-promotional-9-16.png",
+    img: "/kinario/kinario-poster-promotional-9-16.webp",
     screenshots: [
-      "/kinario/kinario_mainmenu.PNG",
-      "/kinario/kinario_levelselect.PNG",
-      "/kinario/kinario_uncompletedlevel.PNG",
-      "/kinario/kinario_completedlevel.PNG",
-      "/kinario/kinario_result.PNG",
-      "/kinario/kinario_helpjojohint.PNG",
-      "/kinario/kinario_helpjojominigame.PNG",
-      "/kinario/kinario_guidebook.PNG",
-      "/kinario/kinario_reference.PNG",
-      "/kinario/kinario_aboutus.PNG",
+      "/kinario/kinario_mainmenu.webp",
+      "/kinario/kinario_levelselect.webp",
+      "/kinario/kinario_uncompletedlevel.webp",
+      "/kinario/kinario_completedlevel.webp",
+      "/kinario/kinario_result.webp",
+      "/kinario/kinario_helpjojohint.webp",
+      "/kinario/kinario_helpjojominigame.webp",
+      "/kinario/kinario_guidebook.webp",
+      "/kinario/kinario_reference.webp",
+      "/kinario/kinario_aboutus.webp",
     ],
-    iconLists: ["/swift.svg", "/swiftui.png"],
+    iconLists: ["/swift.svg", "/swiftui.webp"],
     link: "https://apps.apple.com/pe/app/kinario/id6800217669?l=en-GB&platform=vision",
   },
   {
@@ -114,20 +114,20 @@ export const projects = [
     tag: "Group Trip Tracking App",
     title: "Omawe",
     des: "Omawe eliminates the stress of coordinating group road trips and meetups. By pairing glanceable Lock Screen Live Activities with a high-performance Go & PostGIS backend, Omawe gives travelers sub-2-second awareness of who's arrived, who's en route, and who's delayed—cutting 'where are you?' messaging down to zero while protecting privacy through time-boxed sharing.",
-    img: "/omawe_8.png",
+    img: "/omawe_8.webp",
     screenshots: [
-      "/omawe_1.png",
-      "/omawe_2.png",
-      "/omawe_3.png",
-      "/omawe_4.png",
-      "/omawe_5.png",
-      "/omawe_6.png",
-      "/omawe_7.png",
-      "/omawe_8.png",
-      "/omawe_9.png",
-      "/omawe_10.png"
+      "/omawe_1.webp",
+      "/omawe_2.webp",
+      "/omawe_3.webp",
+      "/omawe_4.webp",
+      "/omawe_5.webp",
+      "/omawe_6.webp",
+      "/omawe_7.webp",
+      "/omawe_8.webp",
+      "/omawe_9.webp",
+      "/omawe_10.webp"
     ],
-    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
+    iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp"],
     link: "https://apps.apple.com/id/app/omawe-group-trip-tracker/id6788641544",
     website: "https://omaweapp.my.id/",
   },
@@ -136,19 +136,19 @@ export const projects = [
     tag: "Children's Sex Education App",
     title: "Nomi",
     des: "Nomi transforms child sex education and bodily autonomy into an engaging, shame-free adventure for kids aged 6–9. Built at the Apple Developer Academy Bali, Nomi pairs interactive storybooks, tactile boundary sorting, and a PIN-protected Parent Dashboard to empower children with safe-touch literacy and open trusted communication channels with caregivers.",
-    img: "/nomi_6.png",
+    img: "/nomi_6.webp",
     screenshots: [
-      "/nomi_1.png",
-      "/nomi_2.png",
-      "/nomi_3.png",
-      "/nomi_4.png",
-      "/nomi_5.png",
-      "/nomi_6.png",
-      "/nomi_7.png",
-      "/nomi_8.png",
-      "/nomi_9.png"
+      "/nomi_1.webp",
+      "/nomi_2.webp",
+      "/nomi_3.webp",
+      "/nomi_4.webp",
+      "/nomi_5.webp",
+      "/nomi_6.webp",
+      "/nomi_7.webp",
+      "/nomi_8.webp",
+      "/nomi_9.webp"
     ],
-    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
+    iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/CfVMyB8z",
   },
   {
@@ -156,16 +156,16 @@ export const projects = [
     tag: "Scrapbook App",
     title: "BlooBook",
     des: "BlooBook revives the tactile nostalgia of analog scrapbooking for the digital age. Built at the Apple Developer Academy Bali, it transforms everyday smartphone snapshots into vintage polaroids and perforated postage stamps. With a fluid, multi-touch canvas workspace, interactive physics, custom stickers, and ImageRenderer export, BlooBook turns scattered photo rolls into intentional, shareable memory albums.",
-    img: "/bloobook_6.png",
+    img: "/bloobook_6.webp",
     screenshots: [
-      "/bloobook_1.png",
-      "/bloobook_2.png",
-      "/bloobook_3.png",
-      "/bloobook_4.png",
-      "/bloobook_5.png",
-      "/bloobook_6.png"
+      "/bloobook_1.webp",
+      "/bloobook_2.webp",
+      "/bloobook_3.webp",
+      "/bloobook_4.webp",
+      "/bloobook_5.webp",
+      "/bloobook_6.webp"
     ],
-    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
+    iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/RPawJCsC",
   },
   {
@@ -173,9 +173,9 @@ export const projects = [
     tag: "Balinese Language Dictionary App",
     title: "Newblie",
     des: "Newblie is an interactive Balinese language dictionary application designed to help newcomers, students, and travelers connect with local culture in Bali. Built with SwiftUI and SwiftData at the Apple Developer Academy Bali, Newblie features gesture-driven 3D flashcards, categorized conversational phrasebooks, and a personal dictionary for immersive on-the-go learning.",
-    img: "/project5.png",
-    screenshots: ["/project5.png"],
-    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
+    img: "/project5.webp",
+    screenshots: ["/project5.webp"],
+    iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/DHNasJn6",
     github: "https://github.com/alfathoshi/Newblie",
   },
@@ -184,9 +184,9 @@ export const projects = [
     tag: "Mental Health App",
     title: "Teman Bicara",
     des: "Teman Bicara is a mobile application that provides a platform for users to connect with each other and share their thoughts and ideas.",
-    img: "/project1.png",
-    screenshots: ["/project1.png"],
-    iconLists: ["/flutter.svg", "/firebase.svg", "/gemini.svg", "/laravel.svg", "/midtrans.png", "/nginx.svg", "/azure.svg", "/mysql.svg"],
+    img: "/project1.webp",
+    screenshots: ["/project1.webp"],
+    iconLists: ["/flutter.svg", "/firebase.svg", "/gemini.svg", "/laravel.svg", "/midtrans.webp", "/nginx.svg", "/azure.svg", "/mysql.svg"],
     link: "https://github.com/TemanBicara/temanbicara-mobile",
   },
   {
@@ -194,8 +194,8 @@ export const projects = [
     tag: "Immunization App",
     title: "BeHealthy",
     des: "BeHealthy is a mobile application that provides a platform for users to track their immunization records and get reminders for upcoming vaccinations.",
-    img: "/project3.png",
-    screenshots: ["/project3.png"],
+    img: "/project3.webp",
+    screenshots: ["/project3.webp"],
     iconLists: ["/flutter.svg", "/firebase.svg"],
     link: "https://github.com/alfathoshi/team13_motionhack",
   },
@@ -207,28 +207,28 @@ export const testimonials = [
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/asprak1.jpg"
+    src: "/asprak1.webp"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/asprak2.jpg"
+    src: "/asprak2.webp"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/abdimas1.jpg"
+    src: "/abdimas1.webp"
   },
   {
     quote:
       "Collaborating with Adrian",
     name: "Michael Johnson",
     designation: "Director of AlphaStream Technologies",
-    src: "/abdimas2.jpg"
+    src: "/abdimas2.webp"
   },
 
 ];
@@ -277,7 +277,7 @@ export const workExperience = [
     period: "March 2026 – Present",
     desc: "Completed 6+ project-based challenges, shipping 4 iOS applications to the App Store using Swift, SwiftUI, ActivityKit, and Go/PostgreSQL backend.",
     className: "md:col-span-2",
-    thumbnail: "/ada_bali.jpg",
+    thumbnail: "/ada_bali.webp",
   },
   {
     id: 2,
@@ -287,7 +287,7 @@ export const workExperience = [
     period: "July 2025 – August 2025",
     desc: "Collaborated in a Hustler-Hipster-Hacker squad to enhance 4 GraPARI Online features, synthesized 319 survey responses and 15 interviews, achieving a 77.5 SUS score.",
     className: "md:col-span-2",
-    thumbnail: "/telkomsel.jpg",
+    thumbnail: "/telkomsel.webp",
   },
   {
     id: 3,
@@ -297,7 +297,7 @@ export const workExperience = [
     period: "December 2023 – August 2024",
     desc: "Developed cross-platform Flutter applications to support academic research projects and deliver functional outputs",
     className: "md:col-span-2",
-    thumbnail: "/motion2.jpeg",
+    thumbnail: "/motion2.webp",
   },
   {
     id: 4,
@@ -307,7 +307,7 @@ export const workExperience = [
     period: "December 2023 – September 2025",
     desc: "Evolved from bootcamp member and Hackfest 2024 Strategist to lead Mentor, structuring mobile learning paths and mentoring junior participants.",
     className: "md:col-span-2",
-    thumbnail: "/gdgoc2.jpg",
+    thumbnail: "/gdgoc2.webp",
   },
 ];
 
@@ -333,43 +333,43 @@ export const items = [
   {
     title: "Nominated as The Best Hacker",
     image:
-      "/motion1.jpg",
+      "/motion1.webp",
     className: "absolute top-10 left-[20%] rotate-[-5deg]",
   },
   {
     title: "Motion Lab 8.0",
     image:
-      "/motion2.jpeg",
+      "/motion2.webp",
     className: "absolute top-40 left-[25%] rotate-[-7deg]",
   },
   {
     title: "MC at Networking Night",
     image:
-      "/motion3.jpg",
+      "/motion3.webp",
     className: "absolute top-5 left-[40%] rotate-[8deg]",
   },
   {
     title: "Public Relations and Design",
     image:
-      "/motion4.jpg",
+      "/motion4.webp",
     className: "absolute top-32 left-[55%] rotate-[10deg]",
   },
   {
     title: "It's a Wrap Study Group!",
     image:
-      "/motion5.png",
+      "/motion5.webp",
     className: "absolute top-20 right-[35%] rotate-[2deg]",
   },
   {
     title: "Mentor at Study Group",
     image:
-      "/motion6.png",
+      "/motion6.webp",
     className: "absolute top-24 left-[45%] rotate-[-7deg]",
   },
   {
     title: "Speaker for Mobile Course Response",
     image:
-      "/motion7.jpg",
+      "/motion7.webp",
     className: "absolute top-8 left-[30%] rotate-[4deg]",
   },
 ];

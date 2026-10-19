@@ -55,6 +55,7 @@ import {
 import { ContactDrawer } from "./ContactDrawer";
 import { ProjectGallery } from "./ProjectGallery";
 import { ExperienceModal } from "./ExperienceModal";
+import { AppleInlineMedia } from "./ui/apple-inline-media";
 
 // Short, punchy 1-line captions for the 6 iOS apps
 const shortTaglines: Record<string, string> = {
@@ -69,70 +70,70 @@ const shortTaglines: Record<string, string> = {
 // 10 Landscape in-game screenshots for Kinario
 const kinarioScreenshots = [
   {
-    src: "/kinario/kinario_mainmenu.PNG",
+    src: "/kinario/kinario_mainmenu.webp",
     badge: "Main Menu",
     title: "Interactive Hub & Audio Settings",
     caption:
       "Vibrant animated main menu providing instant navigation to Start, Guidebook, and custom SFX/BGM controls.",
   },
   {
-    src: "/kinario/kinario_levelselect.PNG",
+    src: "/kinario/kinario_levelselect.webp",
     badge: "Level Select",
     title: "Chapter Progression & Star Ratings",
     caption:
       "Overview across School, Playground, and Swimming Pool chapters with unlocked star badges and upcoming stories.",
   },
   {
-    src: "/kinario/kinario_uncompletedlevel.PNG",
+    src: "/kinario/kinario_uncompletedlevel.webp",
     badge: "Gameplay",
     title: "Active Scenario Puzzle",
     caption:
       "Drag-and-drop empathetic dialogue and action tokens into drop zones while the attempt meter tracks choices.",
   },
   {
-    src: "/kinario/kinario_completedlevel.PNG",
+    src: "/kinario/kinario_completedlevel.webp",
     badge: "Resolution",
     title: "Successful Scenario Completion",
     caption:
       "Visualizing character emotional shifts from distress to relief as empathetic responses calm the situation.",
   },
   {
-    src: "/kinario/kinario_result.PNG",
+    src: "/kinario/kinario_result.webp",
     badge: "Summary",
     title: "Chapter Result & Empathy Tips",
     caption:
       "Performance evaluation awarding 1-3 stars with actionable Whole-Brain Child parenting and childcare takeaways.",
   },
   {
-    src: "/kinario/kinario_helpjojohint.PNG",
+    src: "/kinario/kinario_helpjojohint.webp",
     badge: "Hint System",
     title: "Contextual Guidance & Emotional Needs",
     caption:
       "In-game guidance modal detailing Rhodey or Jojo's emotional state and providing hints when a choice is mismatched.",
   },
   {
-    src: "/kinario/kinario_helpjojominigame.PNG",
+    src: "/kinario/kinario_helpjojominigame.webp",
     badge: "Mini-Game",
     title: "Save Jojo Arcade Water Rescue",
     caption:
       "Aim and throw the lifebuoy within 3 attempts, then rapidly tap the tension bar to pull Jojo safely out of the pool.",
   },
   {
-    src: "/kinario/kinario_guidebook.PNG",
+    src: "/kinario/kinario_guidebook.webp",
     badge: "Guidebook",
     title: "Illustrated Whole-Brain Child Handbook",
     caption:
       "Visual handbook breaking down 'Connect and Redirect', 'Name it to Tame it', and 'Engage, Don't Enrage'.",
   },
   {
-    src: "/kinario/kinario_reference.PNG",
+    src: "/kinario/kinario_reference.webp",
     badge: "References",
     title: "Scientific Citations & Literature",
     caption:
       "Academic foundation acknowledging Dr. Daniel J. Siegel, M.D. and Dr. Tina Payne Bryson, Ph.D.'s clinical research.",
   },
   {
-    src: "/kinario/kinario_aboutus.PNG",
+    src: "/kinario/kinario_aboutus.webp",
     badge: "About Us",
     title: "Team Vision & Origin Mission",
     caption:
@@ -143,70 +144,70 @@ const kinarioScreenshots = [
 // 10 Curated in-app screenshots for Omawe
 const omaweScreenshots = [
   {
-    src: "/omawe_1.png",
+    src: "/omawe_1.webp",
     badge: "Invitation",
     title: "Wax-Sealed Envelope & Deep-Link Onboarding",
     caption:
       "Digital invitation envelope displaying the shared destination, organizer details, and 1-tap join code without forced sign-ups.",
   },
   {
-    src: "/omawe_2.png",
+    src: "/omawe_2.webp",
     badge: "Roster",
     title: "Participant List & Convergence Status",
     caption:
       "Real-time group roster tracking member readiness, departure timestamps, and live en-route states across the convoy.",
   },
   {
-    src: "/omawe_3.png",
+    src: "/omawe_3.webp",
     badge: "Live Tracking",
     title: "Interactive MapKit Group Radar",
     caption:
       "Dynamic MapKit canvas rendering real-time member coordinates, customized member pins, and convergence paths toward the destination.",
   },
   {
-    src: "/omawe_4.png",
+    src: "/omawe_4.webp",
     badge: "Convergence",
     title: "Normalized Journey Progress Bar",
     caption:
       "Visual journey completion line showing normalized road distance and relative positioning toward the shared finish line.",
   },
   {
-    src: "/omawe_5.png",
+    src: "/omawe_5.webp",
     badge: "Live Activity",
     title: "Lock Screen & Dynamic Island Awareness",
     caption:
       "Sub-2-second glanceable status powered by ActivityKit, delivering ambient ETA updates without unlocking the device.",
   },
   {
-    src: "/omawe_8.png",
+    src: "/omawe_8.webp",
     badge: "Real-Time ETA",
     title: "Live Navigation & Traffic Alerts",
     caption:
       "Calculated arrival metrics factoring in traffic delays, live speed changes, and one-tap 'Gonna be late' delay broadcasting.",
   },
   {
-    src: "/omawe_7.png",
+    src: "/omawe_7.webp",
     badge: "Member State",
     title: "Individual Speed & Status Badges",
     caption:
       "Granular participant cards detailing current travel speed, remaining distance, and customized driver delay notifications.",
   },
   {
-    src: "/omawe_8.png",
+    src: "/omawe_8.webp",
     badge: "Trip Summary",
     title: "Trip-End Completion & Overview",
     caption:
       "Post-trip debrief summarizing overall group travel duration, total convoy distance, and average transit speed.",
   },
   {
-    src: "/omawe_9.png",
+    src: "/omawe_9.webp",
     badge: "Performance",
     title: "2x2 Performance Metrics Dashboard",
     caption:
       "Permanent trip stats featuring group top speed, individual driving contributions, and Douglas-Peucker simplified route polylines.",
   },
   {
-    src: "/omawe_10.png",
+    src: "/omawe_10.webp",
     badge: "Social Share",
     title: "9:16 Story Card & Animated Route Replay",
     caption:
@@ -217,63 +218,63 @@ const omaweScreenshots = [
 // 9 Curated in-app screenshots for Nomi
 const nomiScreenshots = [
   {
-    src: "/nomi_1.png",
+    src: "/nomi_1.webp",
     badge: "Welcome",
     title: "Warm Mascot Introduction & Accessible UI",
     caption:
       "Nomi the friendly hedgehog welcomes young learners with cheerful audio greetings, soft pastel palettes, and accessible rounded typography designed for early readers.",
   },
   {
-    src: "/nomi_2.png",
+    src: "/nomi_2.webp",
     badge: "Profile Setup",
     title: "Personalized Child Profile & Zero-PII Setup",
     caption:
       "On-device child profile customization allowing kids to pick avatars and names without collecting emails, tracking IDs, or personal identifiers.",
   },
   {
-    src: "/nomi_3.png",
+    src: "/nomi_3.webp",
     badge: "Character Voice",
     title: "Personalized Audio Narration & Emotional Safety",
     caption:
       "Dynamic voice greeting addressing the child by name with gentle pacing, establishing an empathetic, reassuring tone before entering sensitive learning chapters.",
   },
   {
-    src: "/nomi_4.png",
+    src: "/nomi_4.webp",
     badge: "Adventure Hub",
     title: "Topic Modules & Boundary Curriculum",
     caption:
       "Structured learning paths spanning Body Parts & Boundaries, Personal Hygiene, and Saying No, tracked via child-friendly completion badges.",
   },
   {
-    src: "/nomi_5.png",
+    src: "/nomi_5.webp",
     badge: "Roadmap",
     title: "5-Level Winding Progression Journey",
     caption:
       "Gamified winding path guiding children through 5 bite-sized interactive milestones, transforming abstract safety rules into an encouraging adventure.",
   },
   {
-    src: "/nomi_6.png",
+    src: "/nomi_6.webp",
     badge: "Storybook",
     title: "Landscape Storybook: The Swimsuit Rule",
     caption:
       "Illustrated 16:9 interactive storybook introducing the fundamental Swimsuit Rule: 'The parts your swimsuit covers belong only to you' with synchronized tap-to-read audio.",
   },
   {
-    src: "/nomi_7.png",
+    src: "/nomi_7.webp",
     badge: "Body Anatomy",
     title: "Level 2: Flip-Card Anatomy & Body Autonomy",
     caption:
       "Child-friendly illustrated body map with interactive flip cards explaining private vs. public parts in anatomically accurate, shame-free terms.",
   },
   {
-    src: "/nomi_8.png",
+    src: "/nomi_8.webp",
     badge: "Tactile Sorting",
     title: "Level 3: Safe vs. Unsafe Touch Sorting Game",
     caption:
       "Tactile drag-and-drop gameplay training children to identify comfortable touches (comforting high-fives) versus unsafe touches, backed by immediate audio feedback.",
   },
   {
-    src: "/nomi_9.png",
+    src: "/nomi_9.webp",
     badge: "Trust Contract",
     title: "Level 5: Digital Pinky Promise & Parent Safety Pact",
     caption:
@@ -284,42 +285,42 @@ const nomiScreenshots = [
 // 6 Curated in-app screenshots for BlooBook
 const bloobookScreenshots = [
   {
-    src: "/bloobook_1.png",
+    src: "/bloobook_1.webp",
     badge: "Branding",
     title: "Minimalist Brand Identity & Splash Screen",
     caption:
       "Gentle pastel blue launch screen featuring BlooBook's custom embossed journal emblem and ocean wave motif.",
   },
   {
-    src: "/bloobook_2.png",
+    src: "/bloobook_2.webp",
     badge: "Library",
     title: "Collection Hub & Memory Carousel",
     caption:
       "Dual-tiered overview showing recent polaroid memory carousels, customizable album covers, and categorized trip binders.",
   },
   {
-    src: "/bloobook_3.png",
+    src: "/bloobook_3.webp",
     badge: "Camera Studio",
     title: "Real-Time Stamp & Polaroid Viewfinder",
     caption:
       "Custom camera overlay framing live camera streams directly within perforated stamp edges and retro polaroid viewfinders.",
   },
   {
-    src: "/bloobook_4.png",
+    src: "/bloobook_4.webp",
     badge: "Framing & Notes",
     title: "Interactive Crop, Aspect Framing & Story Notes",
     caption:
       "Precision pan/zoom adjustments inside 6 stamp and polaroid frames, pairing visual memories with titles and 30-word personal notes.",
   },
   {
-    src: "/bloobook_5.png",
+    src: "/bloobook_5.webp",
     badge: "Memories Grid",
     title: "Chronological Showcase & Inspection Sheet",
     caption:
       "Visual grid of all captured memories with high-resolution inspection sheets, date stamps, and instant deletion management.",
   },
   {
-    src: "/bloobook_6.png",
+    src: "/bloobook_6.webp",
     badge: "Scrapbook Canvas",
     title: "Free-Form Multi-Touch Scrapbook Workspace",
     caption:
@@ -330,7 +331,7 @@ const bloobookScreenshots = [
 // Curated in-app screenshots for Newblie
 const newblieScreenshots = [
   {
-    src: "/project5.png",
+    src: "/project5.webp",
     badge: "Flashcard Deck",
     title: "3D Stack & Gesture-Driven Flashcards",
     caption:
@@ -377,23 +378,14 @@ const AppBentoCard = ({
   const status = getProjectStatus(project);
   const isFraqments = project.title.toLowerCase() === "fraqments";
   const isKinario = project.title.toLowerCase() === "kinario";
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
-    if (!isFraqments && videoRef.current) {
-      videoRef.current.currentTime = 0;
-      const playPromise = videoRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => { });
-      }
-    }
+    setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
-    if (!isFraqments && videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
+    setIsHovered(false);
   };
 
   // Small compact horizontal Bento card (BlooBook & Newblie — h-[240px])
@@ -469,26 +461,27 @@ const AppBentoCard = ({
       {/* Center: Media Frame */}
       <div className="relative flex-1 min-h-0 w-full my-2 px-2 py-1 flex items-center justify-center z-10">
         {isFraqments ? (
-          <video
+          <AppleInlineMedia
             src="/fraqments.MOV"
-            poster="/fraqments-poster.png"
+            poster="/fraqments-poster.webp"
+            alt="Fraqments App Preview"
             autoPlay
             loop
             muted
-            playsInline
-            preload="metadata"
-            className="max-h-[92%] max-w-[92%] w-auto h-full object-contain rounded-[22px] drop-shadow-[0_12px_24px_rgba(0,0,0,0.25)] transition-transform duration-500 ease-out group-hover:scale-[1.03] pointer-events-none"
+            className="w-full h-full"
+            mediaClassName="rounded-[22px] group-hover:scale-[1.03]"
           />
         ) : isKinario ? (
-          <video
-            ref={videoRef}
-            src="/kinario.MOV#t=0.001"
-            poster="/kinario-poster.png"
+          <AppleInlineMedia
+            src="/kinario.MOV"
+            poster="/kinario-poster.webp"
+            alt="Kinario App Preview"
+            playOnHover
+            isHovered={isHovered}
             loop
             muted
-            playsInline
-            preload="none"
-            className="max-h-[92%] max-w-[94%] w-full h-auto object-contain rounded-[20px] drop-shadow-[0_12px_24px_rgba(0,0,0,0.25)] transition-transform duration-500 ease-out group-hover:scale-[1.03] pointer-events-none"
+            className="w-full h-full"
+            mediaClassName="rounded-[20px] group-hover:scale-[1.03]"
           />
         ) : (
           <img
@@ -1129,7 +1122,7 @@ const Hero = () => {
           <div className="flex items-center justify-between w-full">
             <div className="relative w-12 h-12 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Bintang Logo"
                 fill
                 className="object-cover"
@@ -1222,7 +1215,7 @@ const Hero = () => {
           <LiquidGlassCard className="p-6 sm:p-8 flex flex-col items-start">
             <div className="relative w-20 h-20 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-sm mb-6">
               <Image
-                src="/portrait2.jpg"
+                src="/portrait2.webp"
                 alt="Muhammad Bintang Al-Fath"
                 fill
                 className="object-cover"
@@ -1374,7 +1367,7 @@ const Hero = () => {
           </div>
 
           <ExperienceBentoCard
-            img="/ada_bali.jpg"
+            img="/ada_bali.webp"
             alt="Apple Developer Academy Bali"
             pillLabel="Learner"
             dotClass={adaExp.dotClass}
@@ -1385,7 +1378,7 @@ const Hero = () => {
             onClick={() => openExperienceModal(adaExp)}
           />
           <ExperienceBentoCard
-            img="/telkomsel.jpg"
+            img="/telkomsel.webp"
             alt="Telkomsel R&D"
             pillLabel="Hacker Enthusiast"
             dotClass={telkomselExp.dotClass}
@@ -1397,7 +1390,7 @@ const Hero = () => {
             onClick={() => openExperienceModal(telkomselExp)}
           />
           <ExperienceBentoCard
-            img="/gdgoc2.jpg"
+            img="/gdgoc2.webp"
             alt="Google Developer Group on Campus"
             pillLabel="Core Team"
             dotClass={gdgocExp.dotClass}
@@ -1408,7 +1401,7 @@ const Hero = () => {
             onClick={() => openExperienceModal(gdgocExp)}
           />
           <ExperienceBentoCard
-            img="/motion2.jpeg"
+            img="/motion2.webp"
             alt="Mobile Innovation Lab"
             pillLabel="Lab Assistant"
             dotClass={motionExp.dotClass}
@@ -1464,7 +1457,7 @@ const Hero = () => {
           {/* EXPERIENCE 2 (250px): GDGoC */}
           <div id="desktop-experience">
             <ExperienceBentoCard
-              img="/gdgoc2.jpg"
+              img="/gdgoc2.webp"
               alt="Google Developer Group on Campus"
               pillLabel="Core Team"
               dotClass={gdgocExp.dotClass}
@@ -1478,7 +1471,7 @@ const Hero = () => {
 
           {/* EXPERIENCE 3 (250px): Mobile Innovation Lab */}
           <ExperienceBentoCard
-            img="/motion2.jpeg"
+            img="/motion2.webp"
             alt="Mobile Innovation Lab"
             pillLabel="Lab Assistant"
             dotClass={motionExp.dotClass}
@@ -1494,7 +1487,7 @@ const Hero = () => {
         <div className="lg:col-span-4 flex flex-col gap-3.5">
           {/* Apple Developer Academy Bali Photo Bento (290px — /ada_bali.jpg) */}
           <ExperienceBentoCard
-            img="/ada_bali.jpg"
+            img="/ada_bali.webp"
             alt="Apple Developer Academy Bali"
             pillLabel="Learner"
             dotClass={adaExp.dotClass}
@@ -1510,7 +1503,7 @@ const Hero = () => {
             <div className="mb-3.5">
               <div className="relative w-11 h-11 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="Bintang Logo"
                   fill
                   className="object-cover"
@@ -1597,7 +1590,7 @@ const Hero = () => {
               </span>
               <div className="relative w-20 h-20 sm:w-22 sm:h-22 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-inner z-20 mt-3 transition-transform duration-300 group-hover:scale-105">
                 <Image
-                  src="/portrait2.jpg"
+                  src="/portrait2.webp"
                   alt="Bintang Al-Fath"
                   fill
                   className="object-cover"
@@ -1681,7 +1674,7 @@ const Hero = () => {
 
           {/* EXPERIENCE 1 (455px): Telkomsel R&D */}
           <ExperienceBentoCard
-            img="/telkomsel.jpg"
+            img="/telkomsel.webp"
             alt="Telkomsel R&D"
             pillLabel="Hacker Enthusiast"
             dotClass={telkomselExp.dotClass}
@@ -1844,7 +1837,7 @@ const Hero = () => {
               {/* Circular Portrait Avatar */}
               <div className="relative w-24 h-24 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-sm mb-8">
                 <Image
-                  src="/portrait2.jpg"
+                  src="/portrait2.webp"
                   alt="Muhammad Bintang Al-Fath"
                   fill
                   className="object-cover"
@@ -2001,7 +1994,7 @@ const Hero = () => {
               <div className="mt-16 flex justify-center">
                 <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                   <Image
-                    src="/logo.png"
+                    src="/logo.webp"
                     alt="Bintang Logo"
                     fill
                     className="object-cover"
@@ -2097,7 +2090,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[20px] overflow-hidden border border-black/10 dark:border-white/15 shadow-md bg-white dark:bg-[#1a1a1c] shrink-0">
                         <Image
-                          src={currentTheme === "dark" ? "/AppIcon/fraqments-dark.png" : "/AppIcon/fraqments-light.png"}
+                          src={currentTheme === "dark" ? "/AppIcon/fraqments-dark.webp" : "/AppIcon/fraqments-light.webp"}
                           alt="fraqments App Icon"
                           fill
                           className="object-cover"
@@ -2284,7 +2277,7 @@ const Hero = () => {
                   {/* Atmospheric Quote Banner (Dousan Miao Image 3 Style) */}
                   <div className="relative mt-8 h-[320px] sm:h-[380px] rounded-[28px] overflow-hidden flex items-center px-8 sm:px-14">
                     <Image
-                      src="/fraqments_problem.jpg"
+                      src="/fraqments_problem.webp"
                       alt="Memory reflection quote background"
                       fill
                       className="object-cover brightness-[0.45] scale-105"
@@ -2317,16 +2310,16 @@ const Hero = () => {
                   </p>
 
                   {/* Phone Mockup Container */}
-                  <div className="rounded-[28px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.05] dark:border-white/[0.07] p-6 sm:p-10 flex items-center justify-center">
-                    <video
+                  <div className="rounded-[28px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.05] dark:border-white/[0.07] p-4 sm:p-8 flex items-center justify-center h-[500px] sm:h-[600px] relative overflow-hidden">
+                    <AppleInlineMedia
                       src="/fraqments.MOV"
-                      poster="/fraqments-poster.png"
+                      poster="/fraqments-poster.webp"
+                      alt="Fraqments 3D Memory Sphere Showcase"
                       autoPlay
                       loop
                       muted
-                      playsInline
-                      preload="metadata"
-                      className="w-full h-150 block"
+                      className="w-full h-full"
+                      mediaClassName="max-h-full w-auto drop-shadow-[0_16px_32px_rgba(0,0,0,0.3)]"
                     />
                   </div>
 
@@ -2387,14 +2380,14 @@ const Hero = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-items-center">
                       <div className="w-[230px] sm:w-[260px] rounded-[24px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                         <img
-                          src="/fragments_2.png"
+                          src="/fragments_2.webp"
                           alt="Instant Spatial Capture"
                           className="w-full h-auto block"
                         />
                       </div>
                       <div className="w-[230px] sm:w-[260px] rounded-[24px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                         <img
-                          src="/fragments_5.png"
+                          src="/fragments_5.webp"
                           alt="Live Session Tracking"
                           className="w-full h-auto block"
                         />
@@ -2441,14 +2434,14 @@ const Hero = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center justify-items-center">
                       <div className="w-[230px] sm:w-[260px] rounded-[24px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                         <img
-                          src="/fragments_3.png"
+                          src="/fragments_3.webp"
                           alt="Curated Moments Folders"
                           className="w-full h-auto block"
                         />
                       </div>
                       <div className="w-[230px] sm:w-[260px] rounded-[24px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                         <img
-                          src="/fragments_4.png"
+                          src="/fragments_4.webp"
                           alt="Interactive Widget Grid & Shared Rooms"
                           className="w-full h-auto block"
                         />
@@ -2504,7 +2497,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"
@@ -2522,14 +2515,14 @@ const Hero = () => {
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[20px] overflow-hidden border border-black/10 dark:border-white/15 shadow-md bg-white dark:bg-[#1a1a1c] shrink-0">
                         <Image
-                          src="/kinario/kinario-app-icon.png"
+                          src="/kinario/kinario-app-icon.webp"
                           alt="Kinario App Icon"
                           fill
                           className="object-cover"
                         />
                       </div>
                       <img
-                        src="/kinario/kinario-app-title.png"
+                        src="/kinario/kinario-app-title.webp"
                         alt="Kinario Title"
                         className="h-12 sm:h-18 w-auto object-contain block dark:brightness-110"
                       />
@@ -2549,7 +2542,7 @@ const Hero = () => {
 
                 <div className="mt-10 rounded-[28px] overflow-hidden bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08] shadow-sm">
                   <img
-                    src="/kinario/kinario-poster-promotional-16-9.png"
+                    src="/kinario/kinario-poster-promotional-16-9.webp"
                     alt="kinario-poster"
                     className="w-full h-full object-contain pointer-events-none"
                   />
@@ -2717,7 +2710,7 @@ const Hero = () => {
                   <div className="mt-4 p-5 rounded-[20px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08] space-y-4">
                     <div className="rounded-[18px] overflow-hidden border border-black/10 dark:border-white/10 shadow-sm bg-black/5">
                       <img
-                        src="/kinario/kinario-levels.png"
+                        src="/kinario/kinario-levels.webp"
                         alt="Kinario Multi-Chapter Level Map"
                         className="w-full h-auto object-contain block"
                       />
@@ -2763,23 +2756,23 @@ const Hero = () => {
                   {/* Scenario Puzzle Overview Banner */}
                   <div className="rounded-[28px] overflow-hidden bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08] shadow-sm">
                     <img
-                      src="/kinario/kinario-scenario-based-puzzle-game.png"
+                      src="/kinario/kinario-scenario-based-puzzle-game.webp"
                       alt="Kinario Scenario-Based Puzzle Gameplay Overview"
                       className="w-full h-auto object-contain block"
                     />
                   </div>
 
                   {/* 2. Hero Showcase Video Banner */}
-                  <div className="mt-10 rounded-[28px] overflow-hidden bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08] shadow-sm">
-                    <video
+                  <div className="mt-10 rounded-[28px] overflow-hidden bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08] shadow-sm h-[420px] sm:h-[520px] relative">
+                    <AppleInlineMedia
                       src="/kinario.MOV"
-                      poster="/kinario-poster.png"
+                      poster="/kinario-poster.webp"
+                      alt="Kinario Gameplay Showcase"
                       autoPlay
                       loop
                       muted
-                      playsInline
-                      preload="metadata"
-                      className="w-full max-h-[520px] object-contain mx-auto"
+                      className="w-full h-full"
+                      mediaClassName="max-h-[480px] w-auto drop-shadow-[0_16px_32px_rgba(0,0,0,0.3)]"
                     />
                   </div>
 
@@ -2837,7 +2830,7 @@ const Hero = () => {
                       <div className="flex flex-col gap-3 p-4 rounded-[22px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08]">
                         <div className="rounded-[16px] overflow-hidden border border-black/10 dark:border-white/10 shadow-xs bg-black/5 aspect-[2688/1242] relative flex items-center justify-center">
                           <img
-                            src="/kinario/kinario-how-to-play-1.png"
+                            src="/kinario/kinario-how-to-play-1.webp"
                             alt="Kinario Step 1 - Choose Action"
                             className="w-full h-full object-contain block"
                           />
@@ -2859,7 +2852,7 @@ const Hero = () => {
                       <div className="flex flex-col gap-3 p-4 rounded-[22px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08]">
                         <div className="rounded-[16px] overflow-hidden border border-black/10 dark:border-white/10 shadow-xs bg-black/5 aspect-[2688/1242] relative flex items-center justify-center">
                           <img
-                            src="/kinario/kinario-how-to-play-2.png"
+                            src="/kinario/kinario-how-to-play-2.webp"
                             alt="Kinario Step 2 - Drag & Drop Response"
                             className="w-full h-full object-contain block"
                           />
@@ -2881,7 +2874,7 @@ const Hero = () => {
                       <div className="flex flex-col gap-3 p-4 rounded-[22px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08]">
                         <div className="rounded-[16px] overflow-hidden border border-black/10 dark:border-white/10 shadow-xs bg-black/5 aspect-[2688/1242] relative flex items-center justify-center">
                           <img
-                            src="/kinario/kinario-how-to-play-3.png"
+                            src="/kinario/kinario-how-to-play-3.webp"
                             alt="Kinario Step 3 - Reflect & Resolve"
                             className="w-full h-full object-contain block"
                           />
@@ -2947,7 +2940,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"
@@ -2965,7 +2958,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[20px] overflow-hidden border border-black/10 dark:border-white/15 shadow-md bg-white dark:bg-[#1a1a1c] shrink-0">
                         <Image
-                          src="/AppIcon/omawe.png"
+                          src="/AppIcon/omawe.webp"
                           alt="Omawe App Icon"
                           fill
                           className="object-cover"
@@ -2992,7 +2985,7 @@ const Hero = () => {
                 <div className="mt-10 rounded-[28px] overflow-hidden bg-gradient-to-b from-[#0a0a0c] via-[#052d26]/40 to-[#08564d]/30 border border-emerald-500/20 shadow-md p-6 sm:p-10 flex items-center justify-center">
                   <div className="max-w-[280px] sm:max-w-[320px] w-full">
                     <img
-                      src="/omawe_8.png"
+                      src="/omawe_8.webp"
                       alt="Omawe Live Navigation & Convergence Interface"
                       className="w-full h-auto object-contain rounded-[24px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
                     />
@@ -3090,7 +3083,7 @@ const Hero = () => {
                     <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
 
                       <img
-                        src="/omawe-ss-1-end-the-endless-where-are-you.png"
+                        src="/omawe-ss-1-end-the-endless-where-are-you.webp"
                         alt="End the endless Where are you? illustration"
                         className="w-full h-auto object-contain rounded-[22px] drop-shadow-[0_12px_24px_rgba(0,0,0,0.18)] dark:drop-shadow-[0_16px_32px_rgba(0,0,0,0.5)]"
                       />
@@ -3188,7 +3181,7 @@ const Hero = () => {
                       <div className="flex flex-col items-center gap-3">
                         <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                           <img
-                            src="/omawe-ss-3-trip-invitation.png"
+                            src="/omawe-ss-3-trip-invitation.webp"
                             alt="Gather Your Crew - Trip Invitation"
                             className="w-full h-auto block"
                           />
@@ -3200,7 +3193,7 @@ const Hero = () => {
                       <div className="flex flex-col items-center gap-3">
                         <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                           <img
-                            src="/omawe-ss-7-track-crew-seamless.png"
+                            src="/omawe-ss-7-track-crew-seamless.webp"
                             alt="Manage Your Crew - Seamless Roster"
                             className="w-full h-auto block"
                           />
@@ -3277,7 +3270,7 @@ const Hero = () => {
                         <div className="flex flex-col items-center gap-3">
                           <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                             <img
-                              src="/omawe-ss-4-live-activity-lockscreen.png"
+                              src="/omawe-ss-4-live-activity-lockscreen.webp"
                               alt="Lock Screen Live Activity"
                               className="w-full h-auto block"
                             />
@@ -3289,7 +3282,7 @@ const Hero = () => {
                         <div className="flex flex-col items-center gap-3">
                           <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                             <img
-                              src="/omawe-ss-5-live-activity-dynamic-island.png"
+                              src="/omawe-ss-5-live-activity-dynamic-island.webp"
                               alt="Dynamic Island & Fluid Control Bar"
                               className="w-full h-auto block"
                             />
@@ -3319,7 +3312,7 @@ const Hero = () => {
                         <div className="flex flex-col items-center gap-3">
                           <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                             <img
-                              src="/omawe-ss-2-spot-everyone-realtime.png"
+                              src="/omawe-ss-2-spot-everyone-realtime.webp"
                               alt="Spot Everyone Realtime"
                               className="w-full h-auto block"
                             />
@@ -3331,7 +3324,7 @@ const Hero = () => {
                         <div className="flex flex-col items-center gap-3">
                           <div className="w-[230px] sm:w-[260px] rounded-[22px] overflow-hidden shadow-xl border border-black/[0.06] dark:border-white/[0.08]">
                             <img
-                              src="/omawe-ss-6-map-view.png"
+                              src="/omawe-ss-6-map-view.webp"
                               alt="Tactical Map View with Participant ETA"
                               className="w-full h-auto block"
                             />
@@ -3361,7 +3354,7 @@ const Hero = () => {
                   <div className="mt-6 rounded-[28px] bg-gradient-to-b from-[#0a0a0c] via-[#052d26]/40 to-[#08564d]/30 shadow-md p-6 sm:p-8 flex flex-col items-center justify-center gap-3">
                     <div className="max-w-[240px] sm:max-w-[280px] w-full rounded-[20px] overflow-hidden">
                       <img
-                        src="/omawe-share.png"
+                        src="/omawe-share.webp"
                         alt="Omawe 9:16 Story Card Export"
                         className="w-full h-auto object-contain block"
                       />
@@ -3427,7 +3420,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"
@@ -3445,7 +3438,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[20px] overflow-hidden border border-black/10 dark:border-white/15 shadow-md bg-white dark:bg-[#1a1a1c] shrink-0">
                         <Image
-                          src={currentTheme === "dark" ? "/AppIcon/nomi-dark.png" : "/AppIcon/nomi-light.png"}
+                          src={currentTheme === "dark" ? "/AppIcon/nomi-dark.webp" : "/AppIcon/nomi-light.webp"}
                           alt="Nomi App Icon"
                           fill
                           className="object-cover"
@@ -3472,7 +3465,7 @@ const Hero = () => {
                 <div className="mt-10 rounded-[28px] overflow-hidden bg-gradient-to-br from-violet-500/[0.08] via-purple-500/[0.04] to-pink-500/[0.08] border border-black/[0.06] dark:border-white/[0.08] p-4 sm:p-8 flex items-center justify-center">
                   <div className="relative w-full max-w-[680px]">
                     <img
-                      src="/nomi_6.png"
+                      src="/nomi_6.webp"
                       alt="Nomi Level 1 Storybook - The Swimsuit Rule"
                       className="w-full h-auto object-contain rounded-[20px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
                     />
@@ -3850,7 +3843,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"
@@ -3868,7 +3861,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[20px] overflow-hidden border border-black/10 dark:border-white/15 shadow-md bg-white dark:bg-[#1a1a1c] shrink-0">
                         <Image
-                          src="/AppIcon/bloobook.png"
+                          src="/AppIcon/bloobook.webp"
                           alt="BlooBook App Icon"
                           fill
                           className="object-cover"
@@ -3895,7 +3888,7 @@ const Hero = () => {
                 <div className="mt-10 rounded-[28px] overflow-hidden bg-gradient-to-br from-sky-500/[0.08] via-indigo-500/[0.04] to-amber-500/[0.08] border border-black/[0.06] dark:border-white/[0.08] p-6 sm:p-10 flex items-center justify-center">
                   <div className="relative w-full max-w-[320px] sm:max-w-[360px]">
                     <img
-                      src="/bloobook_6.png"
+                      src="/bloobook_6.webp"
                       alt="BlooBook Free-Form Scrapbook Canvas Workspace"
                       className="w-full h-auto object-contain rounded-[28px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
                     />
@@ -4186,7 +4179,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"
@@ -4204,7 +4197,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[20px] overflow-hidden border border-black/10 dark:border-white/15 shadow-md bg-white dark:bg-[#1a1a1c] shrink-0">
                         <Image
-                          src={currentTheme === "dark" ? "/AppIcon/newblie-dark.png" : "/AppIcon/newblie-light.png"}
+                          src={currentTheme === "dark" ? "/AppIcon/newblie-dark.webp" : "/AppIcon/newblie-light.webp"}
                           alt="Newblie App Icon"
                           fill
                           className="object-cover"
@@ -4231,7 +4224,7 @@ const Hero = () => {
                 <div className="mt-10 rounded-[28px] overflow-hidden bg-gradient-to-br from-amber-500/[0.08] via-orange-500/[0.04] to-rose-500/[0.08] border border-black/[0.06] dark:border-white/[0.08] p-6 sm:p-10 flex items-center justify-center">
                   <div className="relative w-full max-w-[320px] sm:max-w-[360px]">
                     <img
-                      src="/project5.png"
+                      src="/project5.webp"
                       alt="Newblie 3D Flashcard Stack - Balinese Vocabulary"
                       className="w-full h-auto object-contain rounded-[28px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
                     />
@@ -4522,7 +4515,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"
@@ -4614,7 +4607,7 @@ const Hero = () => {
                 <div className="mt-16 flex justify-center">
                   <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
                     <Image
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="Bintang Logo"
                       fill
                       className="object-cover"

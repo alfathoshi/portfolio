@@ -17,7 +17,7 @@ export default function FraqmentsPrivacyPolicy() {
           <Link href="/" className="inline-flex items-center gap-3 rounded-lg group">
             <div className="relative size-11 rounded-[11px] overflow-hidden shadow-sm">
               <Image
-                src="/fragments-icon-light.png"
+                src="/fragments-icon-light.webp"
                 alt="fraqments Icon"
                 width={44}
                 height={44}
@@ -25,7 +25,7 @@ export default function FraqmentsPrivacyPolicy() {
                 priority
               />
               <Image
-                src="/fragments-icon-dark.png"
+                src="/fragments-icon-dark.webp"
                 alt="fraqments Icon"
                 width={44}
                 height={44}

@@ -118,7 +118,7 @@ export const experiences: ExperienceItem[] = [
     role: "Learner",
     period: "March 2026 – Present",
     category: "iOS Engineering & Apple Ecosystem Fellowship",
-    bannerImg: "/ada_bali.jpg",
+    bannerImg: "/ada_bali.webp",
     bannerPosition: "object-[center_34%]",
     pillLabel: "Learner",
     dotClass: "bg-[#86868b] shadow-[0_0_8px_#86868b]",
@@ -244,7 +244,7 @@ export const experiences: ExperienceItem[] = [
     role: "Hacker Enthusiast - Omnichannel Experience Design",
     period: "July 2025 – August 2025",
     category: "Enterprise Product & Omnichannel Experience",
-    bannerImg: "/telkomsel.jpg",
+    bannerImg: "/telkomsel.webp",
     bannerPosition: "object-[center_28%]",
     pillLabel: "R&D Intern",
     dotClass: "bg-[#ed0226] shadow-[0_0_8px_#ed0226]",
@@ -365,7 +365,7 @@ export const experiences: ExperienceItem[] = [
     role: "Mobile Programming Member",
     period: "December 2023 – August 2024",
     category: "Academic Research & Applied Mobile Development",
-    bannerImg: "/motion2.jpeg",
+    bannerImg: "/motion2.webp",
     bannerPosition: "object-[center_28%]",
     pillLabel: "Mobile Developer",
     dotClass: "bg-[#991b1b] shadow-[0_0_8px_#991b1b]",
@@ -469,43 +469,43 @@ export const experiences: ExperienceItem[] = [
     ],
     gallery: [
       {
-        src: "/motion1.jpg",
+        src: "/motion1.webp",
         title: "Nominated as The Best Hacker",
         caption:
           "Recognition for technical execution and rapid prototyping at MotionHack.",
       },
       {
-        src: "/motion2.jpeg",
+        src: "/motion2.webp",
         title: "Motion Lab 8.0 Family",
         caption:
           "Mobile Innovation Laboratory member cohort and collaborative workspace.",
       },
       {
-        src: "/motion3.jpg",
+        src: "/motion3.webp",
         title: "MC at Networking Night",
         caption:
           "Hosting the annual laboratory networking and technical showcase evening.",
       },
       {
-        src: "/motion4.jpg",
+        src: "/motion4.webp",
         title: "Public Relations and Design",
         caption:
           "Leading promotional design and technical communications for lab events.",
       },
       {
-        src: "/motion5.png",
+        src: "/motion5.webp",
         title: "It's a Wrap Study Group!",
         caption:
           "Concluding an intensive multi-week mobile programming study group series.",
       },
       {
-        src: "/motion6.png",
+        src: "/motion6.webp",
         title: "Mentor at Study Group",
         caption:
           "Providing hands-on code reviews and debugging support for junior lab peers.",
       },
       {
-        src: "/motion7.jpg",
+        src: "/motion7.webp",
         title: "Speaker for Mobile Course Response",
         caption:
           "Delivering a technical briefing on mobile development architectures to university students.",
@@ -522,7 +522,7 @@ export const experiences: ExperienceItem[] = [
     role: "Mobile Development Mentor & Curriculum Lead",
     period: "December 2023 – September 2025",
     category: "Developer Community Leadership & Technical Education",
-    bannerImg: "/gdgoc2.jpg",
+    bannerImg: "/gdgoc2.webp",
     bannerPosition: "object-[center_28%]",
     pillLabel: "Mentor & Curriculum",
     dotClass: "bg-[#1a73e8] shadow-[0_0_8px_#1a73e8]",
@@ -634,25 +634,25 @@ export const experiences: ExperienceItem[] = [
     ],
     gallery: [
       {
-        src: "/gdgoc2.jpg",
+        src: "/gdgoc2.webp",
         title: "GDGoC Core Team Cohort",
         caption:
           "Leading technical study groups and workshops with Google Developer Group on Campus Telkom University.",
       },
       {
-        src: "/gdgoc1.png",
+        src: "/gdgoc1.webp",
         title: "Core Team of The Month",
         caption:
           "Recognized for outstanding contributions in technical mentorship and community leadership within Google Developer Group on Campus.",
       },
       {
-        src: "/gdgoc3.jpg",
+        src: "/gdgoc3.webp",
         title: "Mentor and Curriculum Core Team",
         caption:
           "Facilitating structured learning journey for participants in the Google Developer Group on Campus",
       },
       {
-        src: "/gdgoc5.png",
+        src: "/gdgoc5.webp",
         title: "Mentorship Office Hours",
         caption:
           "One-on-one technical consultation and architecture guidance for junior developers.",

@@ -19,34 +19,34 @@ import { items as motionLabItems, experiences, ExperienceItem, getExperienceThem
 import { ExperienceModal } from "./ExperienceModal";
 
 const gdgocImages = [
-  "/gdgoc1.png",
-  "/gdgoc2.jpg",
-  "/gdgoc5.png",
-  "/gdgoc4.jpg",
-  "/gdgoc3.jpg",
-  "/gdgoc6.jpg",
+  "/gdgoc1.webp",
+  "/gdgoc2.webp",
+  "/gdgoc5.webp",
+  "/gdgoc4.webp",
+  "/gdgoc3.webp",
+  "/gdgoc6.webp",
 ];
 
 const academicMoments = [
   {
     title: "Teaching & Practicum Assistant",
     subtitle: "Guided students in hands-on programming & mobile development labs",
-    src: "/asprak1.jpg",
+    src: "/asprak1.webp",
   },
   {
     title: "Practicum Lab Sessions",
     subtitle: "Mentoring code reviews, debugging, and software architecture",
-    src: "/asprak2.jpg",
+    src: "/asprak2.webp",
   },
   {
     title: "Community Service (Abdimas)",
     subtitle: "Empowering local communities through digital literacy & technology",
-    src: "/abdimas1.jpg",
+    src: "/abdimas1.webp",
   },
   {
     title: "Community Workshop Delivery",
     subtitle: "Hands-on training and collaborative field implementation",
-    src: "/abdimas2.jpg",
+    src: "/abdimas2.webp",
   },
 ];
 
@@ -179,7 +179,7 @@ const Experience = () => {
 
           <div className="relative h-56 sm:h-64 md:w-80 rounded-2xl overflow-hidden border border-black/[0.06] dark:border-white/[0.1] shrink-0">
             <img
-              src="/ada_bali.jpg"
+              src="/ada_bali.webp"
               alt="Apple Developer Academy Bali"
               loading="lazy"
               decoding="async"
@@ -222,7 +222,7 @@ const Experience = () => {
 
           <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden border border-black/[0.06] dark:border-white/[0.1] group">
             <img
-              src="/telkomsel.jpg"
+              src="/telkomsel.webp"
               alt="Telkomsel Research & Development Intern"
               loading="lazy"
               decoding="async"
