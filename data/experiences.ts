@@ -112,7 +112,7 @@ export interface ExperienceItem {
 export const experiences: ExperienceItem[] = [
   {
     id: "ada-bali",
-    company: "Apple Developer Academy @ Binus University",
+    company: "Apple Developer Academy @ Binus - Bali",
     shortCompany: "Apple Developer Academy",
     location: "Kuta, Bali",
     role: "Learner",
@@ -157,9 +157,9 @@ export const experiences: ExperienceItem[] = [
         sublabel: "Stakeholder critiques & usability testing",
       },
       {
-        value: "Design, Tech & PM",
-        label: "Cross-Functional Teamwork",
-        sublabel: "Collaborate, manage & deliver as a team",
+        value: "3",
+        label: "Multidisciplinary Learning",
+        sublabel: "PM, Design, Tech",
       },
     ],
     officialBullets: [
@@ -353,12 +353,6 @@ export const experiences: ExperienceItem[] = [
       },
     ],
     gallery: [
-      {
-        src: "/telkomsel.jpg",
-        title: "Telkomsel R&D / Experience Design Team",
-        caption:
-          "Working within the cross-functional squad at Telkomsel Smart Office, South Jakarta.",
-      },
     ],
     reflection:
       "Working on GraPARI Online at Telkomsel taught me how enterprise-scale software operates. When dealing with millions of subscribers, engineering is not just about writing elegant code—it's about understanding complex business requirements, authoring bulletproof API mappings, and verifying every detail through structured user validation.",

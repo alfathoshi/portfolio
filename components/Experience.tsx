@@ -151,7 +151,7 @@ const Experience = () => {
                 </span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold text-[#1d1d1f] dark:text-[#f5f5f7] mt-1 group-hover:text-[#6e6e73] dark:group-hover:text-[#98989d] transition-colors">
-                Apple Developer Academy @ Binus University
+                Apple Developer Academy @ Binus - Bali
               </h3>
               <p className="text-xs sm:text-sm text-[#515154] dark:text-[#a1a1a6] mt-2 max-w-2xl leading-relaxed">
                 Completed 6+ project-based challenges progressing from user research
