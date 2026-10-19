@@ -426,11 +426,6 @@ export const experiences: ExperienceItem[] = [
         label: "Nominated in MotionHack",
         sublabel: "Recognized for rapid technical prototyping",
       },
-      {
-        value: "60 FPS",
-        label: "Performance Benchmark",
-        sublabel: "Optimized widget rendering & memory",
-      },
     ],
     officialBullets: [
       "Developed and maintained cross-platform mobile applications using Flutter to support research projects and deliver functional research outputs.",
@@ -469,7 +464,7 @@ export const experiences: ExperienceItem[] = [
           {
             title: "Performance & Frame Budgeting",
             description:
-              "Optimized expensive list views and image caching to sustain smooth 60 FPS scrolling even on budget hardware.",
+              "Optimized expensive list views and image caching.",
           },
           {
             title: "Robust Network & Error Handling",

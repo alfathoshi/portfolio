@@ -249,7 +249,13 @@ export const ExperienceModal: React.FC<ExperienceModalProps> = ({
           </div>
 
           {/* 4. Quantitative Impact & Metrics Grid */}
-          <div className="my-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div
+            className={`my-10 grid gap-3 ${
+              experience.metrics.length === 3
+                ? "grid-cols-1 sm:grid-cols-3"
+                : "grid-cols-2 sm:grid-cols-4"
+            }`}
+          >
             {experience.metrics.map((m, idx) => (
               <LiquidGlassCard
                 key={idx}

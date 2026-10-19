@@ -295,7 +295,7 @@ export const workExperience = [
     role: "Mobile Programming Member",
     location: "Telkom University, Bandung",
     period: "December 2023 – August 2024",
-    desc: "Developed cross-platform Flutter applications to support academic research projects and deliver functional outputs with smooth 60 FPS performance.",
+    desc: "Developed cross-platform Flutter applications to support academic research projects and deliver functional outputs",
     className: "md:col-span-2",
     thumbnail: "/motion2.jpeg",
   },

@@ -1395,7 +1395,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/gdgoc2.jpg"
             alt="Google Developer Group on Campus"
-            pillLabel="Mentor & Lead"
+            pillLabel="Core Team"
             dotClass={gdgocExp.dotClass}
             title="Google Developer Group on Campus"
             subtitle="Mobile Dev Member & Curriculum Lead • Hackfest '24"
@@ -1406,7 +1406,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/motion2.jpeg"
             alt="Mobile Innovation Lab"
-            pillLabel="Mobile Member"
+            pillLabel="Lab Assistant"
             dotClass={motionExp.dotClass}
             title="Mobile Innovation Laboratory"
             subtitle="Cross-platform Flutter apps for university R&D"
@@ -1462,7 +1462,7 @@ const Hero = () => {
             <ExperienceBentoCard
               img="/gdgoc2.jpg"
               alt="Google Developer Group on Campus"
-              pillLabel="Mentor & Lead"
+              pillLabel="Core Team"
               dotClass={gdgocExp.dotClass}
               title="Google Developer Group on Campus"
               subtitle="Mobile Dev Member & Curriculum Lead • Hackfest '24"
@@ -1476,7 +1476,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/motion2.jpeg"
             alt="Mobile Innovation Lab"
-            pillLabel="Mobile Member"
+            pillLabel="Lab Assistant"
             dotClass={motionExp.dotClass}
             title="Mobile Innovation Laboratory"
             subtitle="Cross-platform Flutter apps for university R&D"
