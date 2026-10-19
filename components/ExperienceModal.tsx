@@ -221,6 +221,8 @@ export const ExperienceModal: React.FC<ExperienceModalProps> = ({
             <img
               src={experience.bannerImg}
               alt={experience.company}
+              loading="lazy"
+              decoding="async"
               className={`w-full h-full object-cover ${
                 experience.bannerPosition || "object-center"
               }`}
