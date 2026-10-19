@@ -135,8 +135,10 @@ export const experiences: ExperienceItem[] = [
       "CoreTransferable & Spatial Math",
       "Go & PostgreSQL (PostGIS)",
       "Supabase Realtime",
+      "UI/UX Design & Human Interface Guidelines",
+      "Project Management & Team Collaboration",
       "Challenge-Based Learning (CBL)",
-      "Usability Testing & HIG",
+      "Usability Testing & Iteration",
     ],
     metrics: [
       {
@@ -155,9 +157,9 @@ export const experiences: ExperienceItem[] = [
         sublabel: "Stakeholder critiques & usability testing",
       },
       {
-        value: "Full-Stack",
-        label: "Native iOS + Go Backend",
-        sublabel: "PostgreSQL & PostGIS real-time tracking",
+        value: "Design, Tech & PM",
+        label: "Cross-Functional Teamwork",
+        sublabel: "Collaborate, manage & deliver as a team",
       },
     ],
     officialBullets: [
@@ -228,34 +230,11 @@ export const experiences: ExperienceItem[] = [
       },
     ],
     gallery: [
-      {
-        src: "/ada_bali.jpg",
-        title: "Academy Cohort Collaboration",
-        caption:
-          "Collaborating with multidisciplinary developers and designers at the Apple Developer Academy Bali campus.",
-      },
-      {
-        src: "/fragments_1.png",
-        title: "fraqments (App Store)",
-        caption:
-          "Spatial 3D memory constellation journal built with SwiftUI & SwiftData.",
-      },
-      {
-        src: "/kinario/kinario-poster-promotional-16-9.png",
-        title: "Kinario (App Store)",
-        caption:
-          "Scenario-based puzzle game teaching empathetic child emotional regulation.",
-      },
-      {
-        src: "/omawe_8.png",
-        title: "Omawe (App Store)",
-        caption:
-          "Real-time group trip tracker with Go & PostGIS backend + ActivityKit.",
-      },
+
     ],
     relatedAppIds: ["fraqments", "kinario", "omawe", "nomi", "bloobook", "newblie"],
     reflection:
-      "The Apple Developer Academy shifted my perspective from being someone who merely writes code to becoming a complete product engineer. Every technical decision—from choosing SwiftData over UserDefaults to architecting spatial 3D gestures—is rooted in how it makes the user feel.",
+      "The Apple Developer Academy shifted my perspective from being someone who merely writes code to becoming a well-rounded product builder. Learning and working across design, technology, and project management taught me how to collaborate seamlessly in multidisciplinary teams, lead agile sprints, and deliver cohesive products from ideation to production.",
   },
   {
     id: "telkomsel",
