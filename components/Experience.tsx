@@ -181,6 +181,8 @@ const Experience = () => {
             <img
               src="/ada_bali.jpg"
               alt="Apple Developer Academy Bali"
+              loading="lazy"
+              decoding="async"
               className={`h-full w-full object-cover ${adaExp.bannerPosition || "object-center"} transition-transform duration-700 group-hover:scale-105`}
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
@@ -222,6 +224,8 @@ const Experience = () => {
             <img
               src="/telkomsel.jpg"
               alt="Telkomsel Research & Development Intern"
+              loading="lazy"
+              decoding="async"
               className={`h-full w-full object-cover ${telkomselExp.bannerPosition || "object-[center_28%]"} transition-transform duration-700 group-hover:scale-105`}
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/65 via-transparent to-transparent" />
@@ -270,6 +274,8 @@ const Experience = () => {
                 <img
                   src={img}
                   alt={`GDGoC activity ${idx + 1}`}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
               </motion.div>

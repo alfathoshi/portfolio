@@ -471,21 +471,23 @@ const AppBentoCard = ({
         {isFraqments ? (
           <video
             src="/fraqments.MOV"
+            poster="/fraqments-poster.png"
             autoPlay
             loop
             muted
             playsInline
-            preload="auto"
+            preload="metadata"
             className="max-h-[92%] max-w-[92%] w-auto h-full object-contain rounded-[22px] drop-shadow-[0_12px_24px_rgba(0,0,0,0.25)] transition-transform duration-500 ease-out group-hover:scale-[1.03] pointer-events-none"
           />
         ) : isKinario ? (
           <video
             ref={videoRef}
             src="/kinario.MOV#t=0.001"
+            poster="/kinario-poster.png"
             loop
             muted
             playsInline
-            preload="auto"
+            preload="none"
             className="max-h-[92%] max-w-[94%] w-full h-auto object-contain rounded-[20px] drop-shadow-[0_12px_24px_rgba(0,0,0,0.25)] transition-transform duration-500 ease-out group-hover:scale-[1.03] pointer-events-none"
           />
         ) : (
@@ -544,6 +546,8 @@ const ExperienceBentoCard = ({
     <img
       src={img}
       alt={alt}
+      loading="lazy"
+      decoding="async"
       className={`absolute inset-0 h-full w-full object-cover ${objectPosition} transition-transform duration-700 group-hover:scale-105`}
     />
     <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/35 to-black/20 group-hover:from-black/90 group-hover:via-black/45 transition-colors" />
@@ -2316,10 +2320,12 @@ const Hero = () => {
                   <div className="rounded-[28px] bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.05] dark:border-white/[0.07] p-6 sm:p-10 flex items-center justify-center">
                     <video
                       src="/fraqments.MOV"
+                      poster="/fraqments-poster.png"
                       autoPlay
                       loop
                       muted
                       playsInline
+                      preload="metadata"
                       className="w-full h-150 block"
                     />
                   </div>
@@ -2767,10 +2773,12 @@ const Hero = () => {
                   <div className="mt-10 rounded-[28px] overflow-hidden bg-[#f5f5f7] dark:bg-[#161618] border border-black/[0.06] dark:border-white/[0.08] shadow-sm">
                     <video
                       src="/kinario.MOV"
+                      poster="/kinario-poster.png"
                       autoPlay
                       loop
                       muted
                       playsInline
+                      preload="metadata"
                       className="w-full max-h-[520px] object-contain mx-auto"
                     />
                   </div>
