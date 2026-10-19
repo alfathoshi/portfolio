@@ -88,7 +88,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({
             ) : layout === "mixed-nomi" ? (
               <div className="h-[340px] sm:h-[460px] w-full flex items-center justify-center">
                 <div
-                  className={`rounded-[22px] overflow-hidden relative flex items-center justify-center p-2 max-w-full max-h-full ${item.src === "/nomi_6.png"
+                  className={`rounded-[22px] overflow-hidden relative flex items-center justify-center p-2 max-w-full max-h-full ${item.src === "/nomi_6.webp" || item.src === "/nomi_6.png"
                     ? "w-full aspect-[2642/1300] h-auto max-h-[340px] sm:max-h-[460px]"
                     : "h-full aspect-[1300/2642]"
                     }`}

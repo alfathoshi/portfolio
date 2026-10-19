@@ -102,7 +102,7 @@ export const SkeletonOne = () => {
         <div className="flex h-full w-full flex-1 flex-col space-y-2">
           {/* TODO */}
           <img
-            src="/telkomsel.jpg"
+            src="/telkomsel.webp"
             alt="header"
             width={800}
             height={800}
@@ -141,15 +141,15 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images1 = [
-    "/gdgoc1.png",
-    "/gdgoc2.jpg",
-    "/gdgoc5.png",
+    "/gdgoc1.webp",
+    "/gdgoc2.webp",
+    "/gdgoc5.webp",
   ];
 
   const images2 = [
-    "/gdgoc4.jpg",
-    "/gdgoc3.jpg",
-    "/gdgoc6.jpg",
+    "/gdgoc4.webp",
+    "/gdgoc3.webp",
+    "/gdgoc6.webp",
   ];
 
   const imageVariants = {

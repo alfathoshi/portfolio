@@ -77,20 +77,20 @@ export const ExperienceModal: React.FC<ExperienceModalProps> = ({
     switch (t) {
       case "fraqments":
         return isDark
-          ? "/AppIcon/fraqments-dark.png"
-          : "/AppIcon/fraqments-light.png";
+          ? "/AppIcon/fraqments-dark.webp"
+          : "/AppIcon/fraqments-light.webp";
       case "kinario":
-        return "/kinario/kinario-app-icon.png";
+        return "/kinario/kinario-app-icon.webp";
       case "omawe":
-        return "/AppIcon/omawe.png";
+        return "/AppIcon/omawe.webp";
       case "nomi":
-        return isDark ? "/AppIcon/nomi-dark.png" : "/AppIcon/nomi-light.png";
+        return isDark ? "/AppIcon/nomi-dark.webp" : "/AppIcon/nomi-light.webp";
       case "bloobook":
-        return "/AppIcon/bloobook.png";
+        return "/AppIcon/bloobook.webp";
       case "newblie":
         return isDark
-          ? "/AppIcon/newblie-dark.png"
-          : "/AppIcon/newblie-light.png";
+          ? "/AppIcon/newblie-dark.webp"
+          : "/AppIcon/newblie-light.webp";
       default:
         return null;
     }
@@ -468,7 +468,7 @@ export const ExperienceModal: React.FC<ExperienceModalProps> = ({
           <div className="mt-16 flex justify-center">
             <div className="relative w-10 h-10 rounded-full overflow-hidden border border-black/10 dark:border-white/15 shadow-xs bg-white dark:bg-[#1a1a1c]">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Bintang Logo"
                 fill
                 className="object-cover"
