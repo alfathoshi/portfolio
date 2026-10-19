@@ -104,7 +104,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-20"
+          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-6 [scrollbar-width:none] md:py-8"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -116,8 +116,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
           <div
             className={cn(
-              "flex flex-row justify-start gap-4 pl-[calc(50%-160px)] md:pl-4",
-              "mx-auto max-w-7xl", // remove max-w-4xl if you want the carousel to span the full width of its container
+              "flex flex-row justify-start gap-5 pl-[calc(50%-160px)] md:pl-1",
+              "mx-auto max-w-7xl",
             )}
           >
             {items.map((item, index) => (
@@ -131,32 +131,34 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   y: 0,
                   transition: {
                     duration: 0.5,
-                    delay: 0.2 * index,
+                    delay: 0.12 * index,
                     ease: "easeOut",
                   },
                 }}
                 key={"card" + index}
-                className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
+                className="rounded-3xl last:pr-[5%] md:last:pr-[20%]"
               >
                 {item}
               </motion.div>
             ))}
           </div>
         </div>
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-end gap-2.5 mt-2">
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-white/75 dark:bg-[#1c1c1e]/80 backdrop-blur-2xl backdrop-saturate-[180%] border border-black/[0.08] dark:border-white/[0.14] shadow-[0_4px_16px_rgba(0,0,0,0.06),inset_0_1px_0_0_rgba(255,255,255,0.9)] dark:shadow-[0_6px_20px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95 transition disabled:opacity-40 cursor-pointer"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
+            aria-label="Scroll left"
           >
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            <IconArrowNarrowLeft className="h-5 w-5 text-[#1d1d1f] dark:text-[#f5f5f7]" />
           </button>
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-white/75 dark:bg-[#1c1c1e]/80 backdrop-blur-2xl backdrop-saturate-[180%] border border-black/[0.08] dark:border-white/[0.14] shadow-[0_4px_16px_rgba(0,0,0,0.06),inset_0_1px_0_0_rgba(255,255,255,0.9)] dark:shadow-[0_6px_20px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95 transition disabled:opacity-40 cursor-pointer"
             onClick={scrollRight}
             disabled={!canScrollRight}
+            aria-label="Scroll right"
           >
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            <IconArrowNarrowRight className="h-5 w-5 text-[#1d1d1f] dark:text-[#f5f5f7]" />
           </button>
         </div>
       </div>
@@ -355,18 +357,18 @@ export const Card = ({
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full max-w-5xl bg-white dark:bg-neutral-900/95 border border-neutral-200 dark:border-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row h-auto max-h-[90vh] md:h-[600px] z-20"
+              className="relative w-full max-w-5xl bg-white/85 dark:bg-[#1c1c1e]/85 backdrop-blur-3xl backdrop-saturate-[190%] border border-black/[0.08] dark:border-white/[0.14] shadow-[0_24px_60px_rgba(0,0,0,0.25),inset_0_1px_0_0_rgba(255,255,255,0.9)] dark:shadow-[0_24px_60px_rgba(0,0,0,0.7),inset_0_1px_0_0_rgba(255,255,255,0.2)] rounded-[32px] overflow-hidden flex flex-col md:flex-row h-auto max-h-[90vh] md:h-[600px] z-20"
             >
               {/* Close Button */}
               <button
-                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-neutral-100 dark:bg-black/50 text-neutral-500 dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-800 hover:text-neutral-800 dark:hover:text-white transition cursor-pointer"
+                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/70 dark:bg-white/10 backdrop-blur-xl border border-black/[0.08] dark:border-white/[0.15] text-[#1d1d1f] dark:text-[#f5f5f7] hover:scale-105 transition cursor-pointer"
                 onClick={() => setOpen(false)}
               >
-                <IconX className="h-6 w-6" />
+                <IconX className="h-5 w-5" />
               </button>
 
               {/* Left Side: Screenshots Carousel */}
-              <div className="relative w-full md:w-1/2 h-[480px] md:h-full bg-neutral-50 dark:bg-neutral-950 flex flex-col items-center justify-center p-6 border-b md:border-b-0 md:border-r border-neutral-200 dark:border-neutral-800">
+              <div className="relative w-full md:w-1/2 h-[480px] md:h-full bg-[#f5f5f7]/70 dark:bg-black/50 flex flex-col items-center justify-center p-6 border-b md:border-b-0 md:border-r border-black/[0.06] dark:border-white/[0.1]">
                 {card.screenshots && card.screenshots.length > 0 ? (
                   <div className="relative w-full h-full flex flex-col items-center justify-between">
                     <div className="relative w-full flex-grow flex items-center justify-center overflow-hidden">
@@ -375,7 +377,7 @@ export const Card = ({
                         <button
                           onClick={scrollModalLeft}
                           disabled={activeScreenIndex === 0}
-                          className="absolute left-2 z-30 p-2 rounded-full bg-neutral-200/85 dark:bg-black/60 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-300 dark:hover:bg-neutral-800 hover:text-neutral-950 dark:hover:text-white transition disabled:opacity-30 disabled:pointer-events-none cursor-pointer shadow-sm border border-neutral-300/50 dark:border-neutral-800"
+                          className="absolute left-2 z-30 p-2 rounded-full bg-white/75 dark:bg-[#1c1c1e]/80 backdrop-blur-xl text-[#1d1d1f] dark:text-white hover:scale-105 transition disabled:opacity-30 disabled:pointer-events-none cursor-pointer shadow-sm border border-black/[0.08] dark:border-white/[0.15]"
                         >
                           <IconChevronLeft className="h-5 w-5" />
                         </button>
@@ -386,7 +388,7 @@ export const Card = ({
                         <button
                           onClick={scrollModalRight}
                           disabled={activeScreenIndex === card.screenshots.length - 1}
-                          className="absolute right-2 z-30 p-2 rounded-full bg-neutral-200/85 dark:bg-black/60 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-300 dark:hover:bg-neutral-800 hover:text-neutral-950 dark:hover:text-white transition disabled:opacity-30 disabled:pointer-events-none cursor-pointer shadow-sm border border-neutral-300/50 dark:border-neutral-800"
+                          className="absolute right-2 z-30 p-2 rounded-full bg-white/75 dark:bg-[#1c1c1e]/80 backdrop-blur-xl text-[#1d1d1f] dark:text-white hover:scale-105 transition disabled:opacity-30 disabled:pointer-events-none cursor-pointer shadow-sm border border-black/[0.08] dark:border-white/[0.15]"
                         >
                           <IconChevronRight className="h-5 w-5" />
                         </button>
@@ -402,7 +404,7 @@ export const Card = ({
                         className="w-full h-full flex overflow-x-scroll overscroll-x-auto [scrollbar-width:none] snap-x snap-mandatory cursor-grab active:cursor-grabbing select-none"
                       >
                         {card.screenshots.map((src, i) => (
-                          <div key={i} className="w-full h-full flex-shrink-0 flex items-center justify-center snap-center p-1 bg-neutral-50 dark:bg-neutral-950">
+                          <div key={i} className="w-full h-full flex-shrink-0 flex items-center justify-center snap-center p-1">
                             <img
                               src={src}
                               alt={`${card.title} screenshot ${i + 1}`}
@@ -453,22 +455,22 @@ export const Card = ({
                   <span className="text-xs font-semibold text-primary uppercase tracking-widest">
                     {card.category}
                   </span>
-                  <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mt-2 leading-tight">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#1d1d1f] dark:text-[#f5f5f7] mt-2 leading-tight">
                     {card.title}
                   </h2>
-                  <div className="prose prose-sm dark:prose-invert max-w-none text-black dark:text-neutral-300 mt-6 leading-relaxed">
+                  <div className="prose prose-sm dark:prose-invert max-w-none text-[#1d1d1f] dark:text-neutral-300 mt-6 leading-relaxed">
                     {card.content}
                   </div>
                 </div>
 
                 {/* Bottom Part: Tech icons & Action buttons */}
-                <div className="mt-8 pt-6 border-t border-neutral-200 dark:border-neutral-800/80 w-full flex flex-col sm:flex-row gap-3">
+                <div className="mt-8 pt-6 border-t border-black/[0.06] dark:border-white/[0.1] w-full flex flex-col sm:flex-row gap-3">
                   {card.link && (
                     <a
                       href={card.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 dark:text-black text-white font-semibold px-6 py-2.5 rounded-xl transition duration-300 cursor-pointer text-sm shadow-md"
+                      className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-2.5 rounded-full transition duration-300 cursor-pointer text-sm shadow-md"
                     >
                       Visit Project
                       <FaLocationArrow className="w-3.5 h-3.5" />
@@ -479,7 +481,7 @@ export const Card = ({
                       href={card.privacyPolicy}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-800 dark:text-neutral-200 font-medium px-5 py-2.5 rounded-xl transition duration-300 cursor-pointer text-sm border border-neutral-300/60 dark:border-neutral-700"
+                      className="flex items-center justify-center gap-2 bg-black/[0.05] hover:bg-black/[0.09] dark:bg-white/[0.08] dark:hover:bg-white/[0.14] text-[#1d1d1f] dark:text-[#f5f5f7] font-medium px-5 py-2.5 rounded-full transition duration-300 cursor-pointer text-sm border border-black/[0.08] dark:border-white/[0.14]"
                     >
                       <ShieldCheck className="w-4 h-4 text-primary" />
                       Privacy Policy

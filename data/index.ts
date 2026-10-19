@@ -1,5 +1,5 @@
 export const navItems = [
-  // { name: "About", link: "#about" },
+  { name: "Overview", link: "#overview" },
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
@@ -71,7 +71,7 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 7,
+    id: 8,
     tag: "Moments Journal App",
     title: "fraqments",
     des: "fraqments transforms how you capture and revisit memories through an interactive 3D spatial constellation. Curate memories into themed moment folders, interact with dynamic widgets, and track live sessions seamlessly via Dynamic Island & Live Activities.",
@@ -84,15 +84,37 @@ export const projects = [
       "/fragments_5.png"
     ],
     iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp", "/supabase.png"],
-    link: "https://github.com/alfathoshi/fragments",
+    link: "https://apps.apple.com/za/app/fragments-capture-the-moment/id6812455792",
+    github: "https://github.com/alfathoshi/fragments",
     privacyPolicy: "/privacy/fraqments",
   },
   {
+    id: 7,
+    tag: "Scenario-Based Puzzle Game",
+    title: "Kinario",
+    des: "Kinario is a scenario-based puzzle game that helps first-time volunteers, educators, and caregivers learn how to respond empathetically to children's emotions. Grounded in 'The Whole-Brain Child' principles, players guide two kids—Rhodey and Jojo—across interactive School, Playground, and Swimming Pool chapters, complete with a rescue mini-game, illustrated Guidebook, and Apple Game Center integration.",
+    img: "/kinario/kinario-poster-promotional-9-16.png",
+    screenshots: [
+      "/kinario/kinario_mainmenu.PNG",
+      "/kinario/kinario_levelselect.PNG",
+      "/kinario/kinario_uncompletedlevel.PNG",
+      "/kinario/kinario_completedlevel.PNG",
+      "/kinario/kinario_result.PNG",
+      "/kinario/kinario_helpjojohint.PNG",
+      "/kinario/kinario_helpjojominigame.PNG",
+      "/kinario/kinario_guidebook.PNG",
+      "/kinario/kinario_reference.PNG",
+      "/kinario/kinario_aboutus.PNG",
+    ],
+    iconLists: ["/swift.svg", "/swiftui.png"],
+    link: "https://apps.apple.com/pe/app/kinario/id6800217669?l=en-GB&platform=vision",
+  },
+  {
     id: 6,
-    tag: "Group Travel App",
+    tag: "Group Trip Tracking App",
     title: "Omawe",
-    des: "Plan together, navigate together, and travel together. Omawe simplifies group trips with shared itineraries, invitations, and real-time location tracking.",
-    img: "/omawe_1.png",
+    des: "Omawe eliminates the stress of coordinating group road trips and meetups. By pairing glanceable Lock Screen Live Activities with a high-performance Go & PostGIS backend, Omawe gives travelers sub-2-second awareness of who's arrived, who's en route, and who's delayed—cutting 'where are you?' messaging down to zero while protecting privacy through time-boxed sharing.",
+    img: "/omawe_8.png",
     screenshots: [
       "/omawe_1.png",
       "/omawe_2.png",
@@ -105,15 +127,16 @@ export const projects = [
       "/omawe_9.png",
       "/omawe_10.png"
     ],
-    iconLists: ["/swiftui.png", "/swiftdata.webp"],
-    link: "https://testflight.apple.com/join/9b4DaTtE",
+    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
+    link: "https://apps.apple.com/id/app/omawe-group-trip-tracker/id6788641544",
+    website: "https://omaweapp.my.id/",
   },
   {
     id: 5,
     tag: "Children's Sex Education App",
     title: "Nomi",
-    des: "Nomi is an interactive educational app that helps children aged 6–9 learn about body safety, personal boundaries, and healthy habits through engaging stories, games, quizzes, animations, and audio experiences in a safe, age-appropriate environment.",
-    img: "/nomi_1.png",
+    des: "Nomi transforms child sex education and bodily autonomy into an engaging, shame-free adventure for kids aged 6–9. Built at the Apple Developer Academy Bali, Nomi pairs interactive storybooks, tactile boundary sorting, and a PIN-protected Parent Dashboard to empower children with safe-touch literacy and open trusted communication channels with caregivers.",
+    img: "/nomi_6.png",
     screenshots: [
       "/nomi_1.png",
       "/nomi_2.png",
@@ -125,15 +148,15 @@ export const projects = [
       "/nomi_8.png",
       "/nomi_9.png"
     ],
-    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/CfVMyB8z",
   },
   {
     id: 4,
-    tag: "Digital Scrapbook App",
+    tag: "Scrapbook App",
     title: "BlooBook",
-    des: "BlooBook is a mobile application that transforms everyday moments into personalized stamp and polaroid memories. Capture photos, customize them with unique styles, and arrange them into beautiful digital albums to preserve your stories in a more meaningful way.",
-    img: "/bloobook_1.png",
+    des: "BlooBook revives the tactile nostalgia of analog scrapbooking for the digital age. Built at the Apple Developer Academy Bali, it transforms everyday smartphone snapshots into vintage polaroids and perforated postage stamps. With a fluid, multi-touch canvas workspace, interactive physics, custom stickers, and ImageRenderer export, BlooBook turns scattered photo rolls into intentional, shareable memory albums.",
+    img: "/bloobook_6.png",
     screenshots: [
       "/bloobook_1.png",
       "/bloobook_2.png",
@@ -142,18 +165,19 @@ export const projects = [
       "/bloobook_5.png",
       "/bloobook_6.png"
     ],
-    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/RPawJCsC",
   },
   {
     id: 3,
-    tag: "Dictionary App",
+    tag: "Balinese Language Dictionary App",
     title: "Newblie",
-    des: "Newblie is a mobile application that provides a platform for users to learn new Balinese words and phrases.",
+    des: "Newblie is an interactive Balinese language dictionary application designed to help newcomers, students, and travelers connect with local culture in Bali. Built with SwiftUI and SwiftData at the Apple Developer Academy Bali, Newblie features gesture-driven 3D flashcards, categorized conversational phrasebooks, and a personal dictionary for immersive on-the-go learning.",
     img: "/project5.png",
     screenshots: ["/project5.png"],
-    iconLists: ["/swiftui.png", "/swiftdata.webp"],
+    iconLists: ["/swift.svg", "/swiftui.png", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/DHNasJn6",
+    github: "https://github.com/alfathoshi/Newblie",
   },
   {
     id: 2,
@@ -242,34 +266,48 @@ export const companies = [
   },
 ];
 
+export * from "./experiences";
+
 export const workExperience = [
   {
     id: 1,
-    title: "Anak Sulung",
-    desc: "Bertanggung jawab atas keharmonisan keluarga dan menjadi contoh bagi adik-adiknya",
+    title: "Apple Developer Academy @ Binus University",
+    role: "Learner",
+    location: "Kuta, Bali",
+    period: "March 2026 – Present",
+    desc: "Completed 6+ project-based challenges, shipping 4 iOS applications to the App Store using Swift, SwiftUI, ActivityKit, and Go/PostgreSQL backend.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/ada_bali.jpg",
   },
   {
     id: 2,
-    title: "Rajin Menabung",
-    desc: "Mengumpulkan uang receh untuk masa depan agar bisa membeli sesuatu yang diinginkan",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Telkomsel",
+    role: "Hacker Enthusiast - Omnichannel Experience Design",
+    location: "South Jakarta, Jakarta",
+    period: "July 2025 – August 2025",
+    desc: "Collaborated in a Hustler-Hipster-Hacker squad to enhance 4 GraPARI Online features, synthesized 319 survey responses and 15 interviews, achieving a 77.5 SUS score.",
+    className: "md:col-span-2",
+    thumbnail: "/telkomsel.jpg",
   },
   {
     id: 3,
-    title: "Berotak Senku",
-    desc: "Mengembangkan potensi diri dan belajar hal baru dari berbagai sumber dan teknologi",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "Mobile Innovation Laboratory",
+    role: "Mobile Programming Member",
+    location: "Telkom University, Bandung",
+    period: "December 2023 – August 2024",
+    desc: "Developed cross-platform Flutter applications to support academic research projects and deliver functional outputs with smooth 60 FPS performance.",
+    className: "md:col-span-2",
+    thumbnail: "/motion2.jpeg",
   },
   {
     id: 4,
-    title: "Misterius dan Penuh Teka-teki",
-    desc: "Pria yang sungguh misterius dan tidak mudah ditebak serta penuh aura dingin namun juga hangat",
+    title: "Google Developer Group on Campus",
+    role: "Mobile Development Mentor and Curriculum",
+    location: "Telkom University, Bandung",
+    period: "December 2023 – September 2025",
+    desc: "Evolved from bootcamp member and Hackfest 2024 Strategist to lead Mentor, structuring mobile learning paths and mentoring junior participants.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/gdgoc2.jpg",
   },
 ];
 

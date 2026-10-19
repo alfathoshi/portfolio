@@ -9,7 +9,6 @@ import {
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./theme-toggle";
 
-
 export const FloatingNav = ({
   navItems,
   className,
@@ -22,22 +21,19 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const previous = scrollYProgress.getPrevious() ?? 0;
+      const direction = current - previous;
 
-      if (current > 0.95) {
+      if (current < 0.05) {
+        setVisible(true);
+      } else if (current > 0.96) {
         setVisible(false);
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(direction < 0);
       }
     }
   });
@@ -54,29 +50,41 @@ export const FloatingNav = ({
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.25,
+          ease: [0.22, 1, 0.36, 1],
         }}
-        className="fixed top-10 inset-x-0 mx-auto z-5000 flex items-center justify-center gap-4 max-w-fit px-4"
+        className="fixed top-5 inset-x-0 mx-auto z-5000 flex items-center justify-center gap-2.5 max-w-fit px-4"
       >
-        <div
+        <nav
           className={cn(
-            "flex max-w-fit rounded-full md:px-8 px-6 py-4 items-center justify-center space-x-4 bg-white/10 backdrop-blur-lg hover:bg-white/20 dark:bg-black/30 dark:hover:bg-black/50 border border-black/[0.08] dark:border-white/[0.08] shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]",
+            "relative flex max-w-fit items-center justify-center gap-1 rounded-full p-1.5",
+            "bg-white/65 dark:bg-[#1c1c1e]/70 backdrop-blur-2xl backdrop-saturate-[190%]",
+            "border border-black/[0.07] dark:border-white/[0.14]",
+            "shadow-[0_10px_30px_-5px_rgba(0,0,0,0.08),inset_0_1px_0_0_rgba(255,255,255,0.9)]",
+            "dark:shadow-[0_12px_36px_-6px_rgba(0,0,0,0.65),inset_0_1px_0_0_rgba(255,255,255,0.22)]",
             className
           )}
         >
-          {navItems.map((navItem: any, idx: number) => (
+          {/* Specular top rim */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-4 top-0 h-px bg-linear-to-r from-transparent via-white/90 dark:via-white/35 to-transparent"
+          />
+          {navItems.map((navItem, idx) => (
             <a
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 font-medium text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                "relative flex items-center gap-1.5 rounded-full px-4 py-2 text-xs sm:text-sm font-medium tracking-tight transition-all duration-200",
+                "text-[#1d1d1f]/80 hover:text-[#1d1d1f] hover:bg-black/[0.05]",
+                "dark:text-[#f5f5f7]/80 dark:hover:text-[#f5f5f7] dark:hover:bg-white/[0.1]"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
-              <span className="text-sm cursor-pointer!">{navItem.name}</span>
+              <span className="cursor-pointer">{navItem.name}</span>
             </a>
           ))}
-        </div>
+        </nav>
         <ThemeToggle />
       </motion.div>
     </AnimatePresence>
