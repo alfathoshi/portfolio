@@ -138,15 +138,15 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed right-0 top-0 z-55 h-screen w-full max-w-md border-l border-neutral-200 dark:border-white/10 bg-white dark:bg-neutral-950 p-6 shadow-2xl flex flex-col md:p-8 text-neutral-900 dark:text-white"
+            className="fixed right-0 top-0 z-55 h-screen w-full max-w-md border-l border-black/[0.08] dark:border-white/[0.14] bg-white/85 dark:bg-[#1c1c1e]/85 backdrop-blur-3xl backdrop-saturate-[190%] p-6 shadow-2xl flex flex-col md:p-8 text-[#1d1d1f] dark:text-[#f5f5f7]"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-neutral-200 dark:border-white/10 pb-4 mb-6">
+            <div className="flex items-center justify-between border-b border-black/[0.07] dark:border-white/[0.1] pb-4 mb-6">
               <div>
-                <h2 className="text-2xl font-bold bg-linear-to-r from-primary to-[#b8d600] bg-clip-text text-transparent">
+                <h2 className="text-2xl font-bold tracking-tight text-[#1d1d1f] dark:text-[#f5f5f7]">
                   Get in Touch
                 </h2>
-                <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">
+                <p className="text-sm text-[#6e6e73] dark:text-[#98989d] mt-1">
                   Fill out the form below or email me directly at{" "}
                   <a href="mailto:alfathbintangmuhammad@gmail.com" className="text-primary hover:underline font-semibold">
                     alfathbintangmuhammad@gmail.com
@@ -155,10 +155,10 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
               </div>
               <button
                 onClick={onClose}
-                className="rounded-full p-2 hover:bg-neutral-100 dark:hover:bg-white/10 text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition"
+                className="rounded-full p-2 bg-black/[0.05] hover:bg-black/[0.1] dark:bg-white/[0.08] dark:hover:bg-white/[0.15] text-[#6e6e73] hover:text-[#1d1d1f] dark:text-neutral-300 dark:hover:text-white transition cursor-pointer"
                 aria-label="Close panel"
               >
-                <IconX size={24} />
+                <IconX size={20} />
               </button>
             </div>
 
@@ -281,19 +281,16 @@ export const ContactDrawer = ({ isOpen, onClose }: ContactDrawerProps) => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full relative flex h-12 items-center justify-center overflow-hidden rounded-full p-px text-sm font-medium disabled:opacity-50 hover:opacity-95 transition"
+                      className="w-full flex h-12 items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold shadow-md disabled:opacity-50 transition cursor-pointer"
                     >
-                      <span className="absolute inset-[-1000%] dark:animate-[spin_8s_linear_infinite] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#E1FF01_0%,#000000_50%,#E1FF01_100%)] bg-primary" />
-                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary px-7 backdrop-blur-3xl transition text-white dark:text-black">
-                        {isSubmitting ? (
-                          <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent" />
-                        ) : (
-                          <>
-                            Send Message
-                            <IconSend size={18} />
-                          </>
-                        )}
-                      </span>
+                      {isSubmitting ? (
+                        <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                      ) : (
+                        <>
+                          <span>Send Message</span>
+                          <IconSend size={18} />
+                        </>
+                      )}
                     </button>
                   </div>
                 </form>

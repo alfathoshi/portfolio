@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bintang's Portfolio",
-  description: "Mobile Developer Enthusiast",
+  title: "Bintang Al-Fath | iOS Developer",
+  description: "iOS Developer at Apple Developer Academy Bali",
   icons: {
     icon: '/logo.png'
   }
