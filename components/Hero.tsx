@@ -1369,7 +1369,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/ada_bali.webp"
             alt="Apple Developer Academy Bali"
-            pillLabel="Learner"
+            pillLabel={adaExp.pillLabel}
             dotClass={adaExp.dotClass}
             title="Apple Developer Academy @ BINUS — Bali"
             subtitle="Learner • 6+ challenges & 4 App Store apps"
@@ -1380,7 +1380,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/telkomsel.webp"
             alt="Telkomsel R&D"
-            pillLabel="Hacker Enthusiast"
+            pillLabel={telkomselExp.pillLabel}
             dotClass={telkomselExp.dotClass}
             title="Telkomsel — Omnichannel Experience Design"
             subtitle="Enhanced 4 GraPARI Online features • 77.5 SUS score"
@@ -1392,7 +1392,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/gdgoc2.webp"
             alt="Google Developer Group on Campus"
-            pillLabel="Core Team"
+            pillLabel={gdgocExp.pillLabel}
             dotClass={gdgocExp.dotClass}
             title="Google Developer Group on Campus"
             subtitle="Mobile Dev Member & Curriculum Lead • Hackfest '24"
@@ -1403,7 +1403,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/motion2.webp"
             alt="Mobile Innovation Lab"
-            pillLabel="Lab Assistant"
+            pillLabel={motionExp.pillLabel}
             dotClass={motionExp.dotClass}
             title="Mobile Innovation Laboratory"
             subtitle="Cross-platform Flutter apps for university R&D"
@@ -1459,7 +1459,7 @@ const Hero = () => {
             <ExperienceBentoCard
               img="/gdgoc2.webp"
               alt="Google Developer Group on Campus"
-              pillLabel="Core Team"
+              pillLabel={gdgocExp.pillLabel}
               dotClass={gdgocExp.dotClass}
               title="Google Developer Group on Campus"
               subtitle="Mobile Dev Member & Curriculum Lead • Hackfest '24"
@@ -1473,7 +1473,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/motion2.webp"
             alt="Mobile Innovation Lab"
-            pillLabel="Lab Assistant"
+            pillLabel={motionExp.pillLabel}
             dotClass={motionExp.dotClass}
             title="Mobile Innovation Laboratory"
             subtitle="Cross-platform Flutter apps for university R&D"
@@ -1489,7 +1489,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/ada_bali.webp"
             alt="Apple Developer Academy Bali"
-            pillLabel="Learner"
+            pillLabel={adaExp.pillLabel}
             dotClass={adaExp.dotClass}
             title="Apple Developer Academy @ BINUS — Bali"
             subtitle="Learner • 6+ challenges & 4 App Store apps"
@@ -1676,7 +1676,7 @@ const Hero = () => {
           <ExperienceBentoCard
             img="/telkomsel.webp"
             alt="Telkomsel R&D"
-            pillLabel="Hacker Enthusiast"
+            pillLabel={telkomselExp.pillLabel}
             dotClass={telkomselExp.dotClass}
             title="Telkomsel — Omnichannel Experience Design"
             subtitle="Enhanced 4 GraPARI Online features • 77.5 SUS score"
