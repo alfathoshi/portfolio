@@ -1957,7 +1957,7 @@ const Hero = () => {
                         setIsAboutOpen(false);
                         openExperienceModal(exp);
                       }}
-                      className="group relative pl-6 cursor-pointer -mx-3 p-3 rounded-2xl hover:bg-black/[0.04] dark:hover:bg-white/[0.05] transition-all"
+                      className="group relative pl-8 cursor-pointer -mx-3 p-3 rounded-2xl hover:bg-black/[0.04] dark:hover:bg-white/[0.05] transition-all"
                     >
                       {/* Timeline Dot */}
                       <span className={`absolute left-3 top-4.5 w-2.5 h-2.5 rounded-full ${exp.dotClass} transition-transform group-hover:scale-125`} />

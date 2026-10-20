@@ -44,7 +44,7 @@ export const getExperienceTheme = (id: string): ExperienceColorTheme => {
         gradient: "from-[#ed0226]/[0.08] to-transparent dark:from-[#ff3b30]/[0.1]",
         selection: "selection:bg-[#ed0226]/20 selection:text-[#ed0226]",
         hoverText: "group-hover:text-[#ed0226] dark:group-hover:text-[#ff3b30]",
-        dotClass: "bg-[#ed0226] shadow-[0_0_8px_#ed0226]",
+        dotClass: "bg-[#ed0226]",
       };
     case "motion-lab":
       return {
@@ -56,7 +56,7 @@ export const getExperienceTheme = (id: string): ExperienceColorTheme => {
         gradient: "from-[#991b1b]/[0.08] to-transparent dark:from-[#f87171]/[0.1]",
         selection: "selection:bg-[#991b1b]/20 selection:text-[#991b1b]",
         hoverText: "group-hover:text-[#991b1b] dark:group-hover:text-[#f87171]",
-        dotClass: "bg-[#991b1b] shadow-[0_0_8px_#991b1b]",
+        dotClass: "bg-[#991b1b]",
       };
     case "gdgoc":
       return {
@@ -68,7 +68,7 @@ export const getExperienceTheme = (id: string): ExperienceColorTheme => {
         gradient: "from-[#1a73e8]/[0.08] to-transparent dark:from-[#60a5fa]/[0.1]",
         selection: "selection:bg-[#1a73e8]/20 selection:text-[#1a73e8]",
         hoverText: "group-hover:text-[#1a73e8] dark:group-hover:text-[#60a5fa]",
-        dotClass: "bg-[#1a73e8] shadow-[0_0_8px_#1a73e8]",
+        dotClass: "bg-[#1a73e8]",
       };
     case "ada-bali":
     default:
@@ -81,7 +81,7 @@ export const getExperienceTheme = (id: string): ExperienceColorTheme => {
         gradient: "from-[#6e6e73]/[0.08] to-transparent dark:from-[#98989d]/[0.1]",
         selection: "selection:bg-[#6e6e73]/20 selection:text-[#1d1d1f] dark:selection:text-white",
         hoverText: "group-hover:text-[#6e6e73] dark:group-hover:text-[#98989d]",
-        dotClass: "bg-[#86868b] shadow-[0_0_8px_#86868b]",
+        dotClass: "bg-[#86868b]",
       };
   }
 };
@@ -121,7 +121,7 @@ export const experiences: ExperienceItem[] = [
     bannerImg: "/ada_bali.webp",
     bannerPosition: "object-[center_34%]",
     pillLabel: "Learner",
-    dotClass: "bg-[#86868b] shadow-[0_0_8px_#86868b]",
+    dotClass: "bg-[#86868b]",
     tagline:
       "Progressing from user research and ideation to production-oriented iOS development and App Store releases.",
     leadSummary:
@@ -247,7 +247,7 @@ export const experiences: ExperienceItem[] = [
     bannerImg: "/telkomsel.webp",
     bannerPosition: "object-[center_28%]",
     pillLabel: "R&D Intern",
-    dotClass: "bg-[#ed0226] shadow-[0_0_8px_#ed0226]",
+    dotClass: "bg-[#ed0226]",
     tagline:
       "Transforming GraPARI Online self-service journeys through data-driven UX research, BRDs, and API mappings.",
     leadSummary:
@@ -368,7 +368,7 @@ export const experiences: ExperienceItem[] = [
     bannerImg: "/motion2.webp",
     bannerPosition: "object-[center_28%]",
     pillLabel: "Mobile Developer",
-    dotClass: "bg-[#991b1b] shadow-[0_0_8px_#991b1b]",
+    dotClass: "bg-[#991b1b]",
     tagline:
       "Developing and maintaining cross-platform Flutter applications to deliver functional university research outputs.",
     leadSummary:
@@ -525,7 +525,7 @@ export const experiences: ExperienceItem[] = [
     bannerImg: "/gdgoc2.webp",
     bannerPosition: "object-[center_28%]",
     pillLabel: "Mentor & Curriculum",
-    dotClass: "bg-[#1a73e8] shadow-[0_0_8px_#1a73e8]",
+    dotClass: "bg-[#1a73e8]",
     tagline:
       "Evolving from Flutter bootcamp learner and Hackfest strategist into lead mobile curriculum architect and mentor.",
     leadSummary:
