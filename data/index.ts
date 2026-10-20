@@ -282,7 +282,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Telkomsel",
-    role: "Hacker Enthusiast - Omnichannel Experience Design",
+    role: "Rnd Intern - Omnichannel Experience Design",
     location: "South Jakarta, Jakarta",
     period: "July 2025 – August 2025",
     desc: "Collaborated in a Hustler-Hipster-Hacker squad to enhance 4 GraPARI Online features, synthesized 319 survey responses and 15 interviews, achieving a 77.5 SUS score.",
