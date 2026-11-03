@@ -3493,6 +3493,12 @@ const Hero = () => {
                         <ArrowUpRight className="w-3.5 h-3.5" />
                       </LiquidGlassButton>
                     </a>
+                    <Link href="/privacy/nomi" target="_blank">
+                      <LiquidGlassButton className="px-4 py-2 text-xs">
+                        <ShieldCheck className="w-3.5 h-3.5" />
+                        <span>Privacy Policy</span>
+                      </LiquidGlassButton>
+                    </Link>
                   </div>
                 </div>
 
