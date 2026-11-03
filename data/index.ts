@@ -150,6 +150,7 @@ export const projects = [
     ],
     iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp"],
     link: "https://testflight.apple.com/join/CfVMyB8z",
+    privacyPolicy: "/privacy/nomi",
   },
   {
     id: 4,
