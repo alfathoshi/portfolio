@@ -237,7 +237,7 @@ export default function NomiPrivacyPolicy() {
             </p>
             <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 p-4 text-sm space-y-1.5">
               <p>
-                <strong className="text-neutral-900 dark:text-white">Developer / Team:</strong> Nomi Team (Apple Developer Academy @ BINUS)
+                <strong className="text-neutral-900 dark:text-white">Developer / Team:</strong> Nomi Team (Beatrice M, Beatrice W, Bintang, Richie, Satria, Vito — Apple Developer Academy @ BINUS)
               </p>
               <p>
                 <strong className="text-neutral-900 dark:text-white">Support &amp; Privacy Contact:</strong>{" "}

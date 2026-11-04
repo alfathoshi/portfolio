@@ -149,7 +149,7 @@ export const projects = [
       "/nomi_9.webp"
     ],
     iconLists: ["/swift.svg", "/swiftui.webp", "/swiftdata.webp"],
-    link: "https://testflight.apple.com/join/CfVMyB8z",
+    link: "https://apps.apple.com/id/app/nomi-kids-sex-education/id6777024337",
     privacyPolicy: "/privacy/nomi",
   },
   {
