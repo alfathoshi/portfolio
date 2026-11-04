@@ -3450,8 +3450,8 @@ const Hero = () => {
                     </div>
 
                     <LiquidGlassPill className="px-3.5 py-1.5 text-xs font-medium shrink-0">
-                      <span className="h-2 w-2 rounded-full bg-sky-400 shadow-[0_0_8px_#38bdf8]" />
-                      <span>TestFlight</span>
+                      <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981]" />
+                      <span>App Store</span>
                     </LiquidGlassPill>
                   </div>
 
@@ -3489,7 +3489,7 @@ const Hero = () => {
                       rel="noopener noreferrer"
                     >
                       <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on TestFlight</span>
+                        <span>View on App Store</span>
                         <ArrowUpRight className="w-3.5 h-3.5" />
                       </LiquidGlassButton>
                     </a>
