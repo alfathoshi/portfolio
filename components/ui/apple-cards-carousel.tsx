@@ -15,7 +15,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { FaLocationArrow } from "react-icons/fa";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, FileText } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
@@ -35,6 +35,7 @@ type Card = {
   screenshots?: string[];
   link?: string;
   privacyPolicy?: string;
+  termsOfService?: string;
 };
 
 export const CarouselContext = createContext<{
@@ -485,6 +486,17 @@ export const Card = ({
                     >
                       <ShieldCheck className="w-4 h-4 text-primary" />
                       Privacy Policy
+                    </Link>
+                  )}
+                  {card.termsOfService && (
+                    <Link
+                      href={card.termsOfService}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-black/[0.05] hover:bg-black/[0.09] dark:bg-white/[0.08] dark:hover:bg-white/[0.14] text-[#1d1d1f] dark:text-[#f5f5f7] font-medium px-5 py-2.5 rounded-full transition duration-300 cursor-pointer text-sm border border-black/[0.08] dark:border-white/[0.14]"
+                    >
+                      <FileText className="w-4 h-4 text-primary" />
+                      Terms of Service
                     </Link>
                   )}
                 </div>

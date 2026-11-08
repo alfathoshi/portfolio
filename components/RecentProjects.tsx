@@ -45,6 +45,10 @@ const RecentProjects = () => {
                   "privacyPolicy" in project
                     ? (project as { privacyPolicy?: string }).privacyPolicy
                     : undefined,
+                termsOfService:
+                  "termsOfService" in project
+                    ? (project as { termsOfService?: string }).termsOfService
+                    : undefined,
                 content: (
                   <div className="flex flex-col gap-4 w-full">
                     <p className="text-xs sm:text-sm font-sans leading-relaxed text-[#6e6e73] dark:text-neutral-300 max-w-sm">

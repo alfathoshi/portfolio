@@ -15,6 +15,7 @@ import {
   MessageSquare,
   ArrowUpRight,
   ShieldCheck,
+  FileText,
   Globe,
   Home,
   User,
@@ -2159,6 +2160,12 @@ const Hero = () => {
                         <span>Privacy Policy</span>
                       </LiquidGlassButton>
                     </Link>
+                    <Link href="/terms/fraqments" target="_blank">
+                      <LiquidGlassButton className="px-4 py-2 text-xs">
+                        <FileText className="w-3.5 h-3.5" />
+                        <span>Terms of Service</span>
+                      </LiquidGlassButton>
+                    </Link>
                   </div>
                 </div>
 
@@ -2472,25 +2479,6 @@ const Hero = () => {
                     cryptographically random 6-character join codes and verified
                     Apple credentials.
                   </p>
-
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on App Store</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </LiquidGlassButton>
-                    </a>
-                    <Link href="/privacy/fraqments" target="_blank">
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <ShieldCheck className="w-3.5 h-3.5" />
-                        <span>Privacy Policy</span>
-                      </LiquidGlassButton>
-                    </Link>
-                  </div>
                 </div>
 
                 {/* Bottom Centered Logo Monogram */}
@@ -2921,19 +2909,6 @@ const Hero = () => {
                   <p className="text-[14.5px] leading-[1.75] text-[#515154] dark:text-[#a1a1a6]">
                     Kinario proves that serious social-emotional education can be delivered as an engaging, tactile mobile game. By placing users in the shoes of a compassionate volunteer, players develop real-world empathy instincts that translate outside the screen.
                   </p>
-
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on App Store</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </LiquidGlassButton>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Bottom Centered Logo Monogram */}
@@ -3391,29 +3366,6 @@ const Hero = () => {
                   <p className="text-[14.5px] leading-[1.75] text-[#515154] dark:text-[#a1a1a6]">
                     Omawe proves that glanceable ambient computing can conquer real-world coordination anxiety without demanding continuous user attention. By aligning Apple&apos;s ActivityKit design language with high-throughput Go micro-architecture, Omawe keeps groups together so they can focus on enjoying the road ahead.
                   </p>
-
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on App Store</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </LiquidGlassButton>
-                    </a>
-                    <a
-                      href="https://omaweapp.my.id/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <Globe className="w-3.5 h-3.5" />
-                        <span>Visit Website</span>
-                      </LiquidGlassButton>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Bottom Centered Logo Monogram */}
@@ -3830,19 +3782,6 @@ const Hero = () => {
                   <p className="text-[14.5px] leading-[1.75] text-[#515154] dark:text-[#a1a1a6]">
                     Nomi proves that sensitive topics do not have to be intimidating or taboo. By combining world-class developmental frameworks, joyful storytelling, and privacy-preserving native iOS engineering, Nomi gives young children the lifelong confidence to protect their bodies and ensures parents have the tools to protect their children.
                   </p>
-
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on TestFlight</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </LiquidGlassButton>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Bottom Centered Logo Monogram */}
@@ -4166,19 +4105,6 @@ const Hero = () => {
                   <p className="text-[14.5px] leading-[1.75] text-[#515154] dark:text-[#a1a1a6]">
                     BlooBook demonstrates that software can celebrate the warmth, imperfection, and tactile satisfaction of analog hobbies. By pairing native Apple graphics technologies with thoughtful gesture physics, BlooBook turns digital memory collection back into a joyful, personal craft.
                   </p>
-
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on TestFlight</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </LiquidGlassButton>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Bottom Centered Logo Monogram */}
@@ -4502,19 +4428,6 @@ const Hero = () => {
                   <p className="text-[14.5px] leading-[1.75] text-[#515154] dark:text-[#a1a1a6]">
                     Newblie represents where my Apple Developer Academy journey started: taking a personal cultural friction point, exploring native Apple frameworks, and engineering an empathetic, tactile software solution that brings people closer together.
                   </p>
-
-                  <div className="pt-2 flex flex-wrap items-center gap-3">
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <LiquidGlassButton className="px-4 py-2 text-xs">
-                        <span>View on TestFlight</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </LiquidGlassButton>
-                    </a>
-                  </div>
                 </div>
 
                 {/* Bottom Centered Logo Monogram */}

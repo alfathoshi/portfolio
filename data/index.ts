@@ -87,6 +87,7 @@ export const projects = [
     link: "https://apps.apple.com/za/app/fragments-capture-the-moment/id6812455792",
     github: "https://github.com/alfathoshi/fragments",
     privacyPolicy: "/privacy/fraqments",
+    termsOfService: "/terms/fraqments",
   },
   {
     id: 7,

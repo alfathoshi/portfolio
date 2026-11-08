@@ -226,6 +226,12 @@ export default function FraqmentsPrivacyPolicy() {
             >
               Privacy policy
             </Link>
+            <Link
+              href="/terms/fraqments"
+              className="text-neutral-500 dark:text-neutral-400 underline decoration-neutral-300 dark:decoration-neutral-700 underline-offset-4 transition-colors hover:text-neutral-900 dark:hover:text-white"
+            >
+              Terms of service
+            </Link>
             <a
               href="mailto:fraqmentsapp@gmail.com"
               className="text-neutral-500 dark:text-neutral-400 underline decoration-neutral-300 dark:decoration-neutral-700 underline-offset-4 transition-colors hover:text-neutral-900 dark:hover:text-white"
