@@ -44,7 +44,7 @@ export default function FraqmentsPrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">
-          Last updated: October 2026
+          Last updated: November 2026
         </p>
 
         <div className="mt-10 space-y-8 border-t border-neutral-200 dark:border-neutral-800 pt-10 leading-relaxed text-neutral-600 dark:text-neutral-300">
@@ -65,7 +65,10 @@ export default function FraqmentsPrivacyPolicy() {
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong className="text-neutral-900 dark:text-white">Personal Moments (On-Device &amp; Offline-First):</strong> All personal memory spheres, notes, photos, videos, and voice memos are stored and processed locally on your device using Apple SwiftData. Personal moments are never transmitted, backed up, or replicated to remote cloud servers or external databases.
+                <strong className="text-neutral-900 dark:text-white">Personal Moments (On-Device &amp; Private iCloud):</strong> All personal memory spheres, notes, photos, videos, and voice memos are stored and processed locally on your device using Apple SwiftData, and may sync privately to your own Apple iCloud account via CloudKit. Personal moments are never transmitted, backed up, or replicated to our developer servers.
+              </li>
+              <li>
+                <strong className="text-neutral-900 dark:text-white">Guest Mode (Local-Only):</strong> Guest Mode operates entirely locally on your device without creating a Supabase profile or cloud account.
               </li>
               <li>
                 <strong className="text-neutral-900 dark:text-white">Shared Moments &amp; Rooms (Collaborative Cloud Storage):</strong> When you create or join a collaborative session (&quot;Shared Room&quot;), the fragments you contribute (including photos, videos, audio/voice recordings, and text notes) are securely uploaded and stored on our cloud infrastructure (Supabase) to enable real-time synchronization, instant updates, and access among verified members of that room.
@@ -89,6 +92,9 @@ export default function FraqmentsPrivacyPolicy() {
                 <strong className="text-neutral-900 dark:text-white">Identifiers:</strong> An internal account User ID used exclusively to manage authentication sessions, room memberships, and access controls.
               </li>
               <li>
+                <strong className="text-neutral-900 dark:text-white">Subscription &amp; Purchase Status:</strong> When you purchase or restore Fraqments Pro while signed in, we verify your StoreKit 2 transaction/AppTransaction receipt with Apple via our backend (Supabase) and store your entitlement status (product ID, expiration date, original transaction ID, and Early Adopter status) to sync Pro access across your devices.
+              </li>
+              <li>
                 <strong className="text-neutral-900 dark:text-white">Device Permissions:</strong>
                 <ul className="list-[circle] space-y-1.5 pl-6 mt-2">
                   <li>
@@ -99,6 +105,12 @@ export default function FraqmentsPrivacyPolicy() {
                   </li>
                   <li>
                     <strong className="text-neutral-900 dark:text-white">Location (When In Use):</strong> Used strictly to tag geographic coordinates to memory fragments so you can view where memories were captured. Location data is <strong className="text-neutral-900 dark:text-white">never</strong> tracked in the background, never used to build movement histories, and <strong className="text-neutral-900 dark:text-white">never</strong> sold to or shared with third-party data brokers.
+                  </li>
+                  <li>
+                    <strong className="text-neutral-900 dark:text-white">Photo Library:</strong> Used to choose a profile picture and save exported moment photos and videos to your device.
+                  </li>
+                  <li>
+                    <strong className="text-neutral-900 dark:text-white">Local Network:</strong> Used to discover and sync with nearby devices over local Wi-Fi.
                   </li>
                   <li>
                     <strong className="text-neutral-900 dark:text-white">Live Activities &amp; Dynamic Island:</strong> Uses iOS ActivityKit to display ongoing recording session status on your Dynamic Island and Lock Screen. This state is managed locally by iOS and is immediately discarded when the session ends.

@@ -113,10 +113,13 @@ export default function FraqmentsTermsOfService() {
                 <strong className="text-neutral-900 dark:text-white">Free Tier:</strong> Provides access to core spatial memory capture with defined functional limits (such as limits on standalone fragments, active personal moments, and participant capacity or active counts for collaborative rooms).
               </li>
               <li>
-                <strong className="text-neutral-900 dark:text-white">Fraqments Pro:</strong> An optional premium auto-renewing subscription tier processed via Apple StoreKit that provides elevated or unlimited access to moment spheres, collaborative rooms, enhanced audio/video quality, and exclusive themes or features.
+                <strong className="text-neutral-900 dark:text-white">Fraqments Pro:</strong> An optional premium tier processed via Apple StoreKit that provides unlimited daily/moment fragments, unlimited personal moments, unlimited hosted shared rooms, Daily Wrap-Up auto-synthesis, and watermark-free exports.
               </li>
               <li>
-                <strong className="text-neutral-900 dark:text-white">Billing &amp; Auto-Renewal:</strong> Payment is charged directly to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing cycle. Your account will be charged for renewal within 24 hours prior to the end of the current period.
+                <strong className="text-neutral-900 dark:text-white">Billing, Free Trials &amp; Auto-Renewal:</strong> Payment is charged directly to your Apple ID account at confirmation of purchase. Yearly subscriptions may include a 7-day free introductory trial for eligible Apple IDs, which automatically converts to a paid subscription unless canceled at least 24 hours before the trial ends. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing cycle. Your account will be charged for renewal within 24 hours prior to the end of the current period.
+              </li>
+              <li>
+                <strong className="text-neutral-900 dark:text-white">Lifetime Purchase:</strong> The Lifetime option is a one-time, non-consumable purchase that grants ongoing Fraqments Pro access and does not auto-renew.
               </li>
               <li>
                 <strong className="text-neutral-900 dark:text-white">Managing Subscriptions &amp; Cancellations:</strong> You can manage or cancel your subscription at any time by going to your device&apos;s <strong>Settings &gt; [Your Apple ID] &gt; Subscriptions</strong>. If you cancel, your Pro access remains active until the end of your current paid billing period.
@@ -208,7 +211,7 @@ export default function FraqmentsTermsOfService() {
               fraqments IS PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
             </p>
             <p>
-              TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER (ALFATHOSTHI) BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, MEDIA, PROFITS, OR GOODWILL RESULTING FROM:
+              TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER (ALFATHOSHI) BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, MEDIA, PROFITS, OR GOODWILL RESULTING FROM:
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Your access to, use of, or inability to access or use the App;</li>
